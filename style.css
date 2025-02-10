@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-align: center;
+}
+
+/* 各見出しのフォントサイズ */
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.6em; }
+h6 { font-size: 1.4em; }
+
+/* セクションの基本レイアウト */
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* 画像を全枠表示 */
+.fullscreen-image {
+    width: 100%;
+    height: auto;
+}
+
+/* 背景画像 + 半透明の黒いボックス */
+.section-bg {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 透明度50%の黒 */
+}
+
+/* テキストを前面に */
+.section-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* 動画埋め込み */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+}
+
+/* 左右分割のレイアウト */
+.split-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.split-left, .split-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+    .split-section {
+        flex-direction: column;
+    }
+}
+
+.bg-rockpage-1 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage%20(1).png'); }
+.bg-background-1 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/background%20(1).jpg'); }
+.bg-background-2 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/background%20(2).jpg'); }
+.bg-background-3 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/background%20(3).jpg'); }
+.bg-rockpage-2 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage%20(2).png'); }
+.bg-rockpage-3 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage%20(3).png'); }
+.bg-rockpage-4 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage%20(4).png'); }
+.bg-rockpage-5 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage%20(5).png'); }
+.bg-betweenimage-1 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage%20(1).png'); }
+.bg-betweenimage-2 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage%20(2).png'); }
+.bg-betweenimage-3 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage%20(3).png'); }
+.bg-betweenimage-4 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage%20(4).png'); }
+.bg-betweensupports-1 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports%20(1).png'); }
+.bg-betweensupports-3 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports%20(3).png'); }
+.bg-betweensupports-4 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports%20(4).png'); }
+.bg-betweensupports-5 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports%20(5).png'); }

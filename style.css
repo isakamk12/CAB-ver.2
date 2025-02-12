@@ -19,10 +19,10 @@ h5 { font-size: 1.6em; }
 h6 { font-size: 1.4em; }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    -webkit-user-select: none;
 }
 
 .section {
@@ -42,6 +42,7 @@ img {
     display: flex; 
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     min-height: 100vh; 
 }
 

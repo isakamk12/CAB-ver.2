@@ -147,11 +147,12 @@ img {
     text-align: center;
 }
 
-/* 動画埋め込み用 */
 .video-container {
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .video-container iframe {
     width: 100%;
@@ -197,4 +198,6 @@ img {
 .bg-spellmissdeleted { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/spellmissdeleted.png'); }
 .bg-newsupport-1 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/newsupport-1.png'); }
 .bg-newsupport-2 { background-image: url('https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/newsupport-2.png'); }
+
+
 

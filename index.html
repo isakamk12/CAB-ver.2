@@ -7,1128 +7,774 @@
 	<title>CAB仮ページ</title>
 	<content="yes" name="apple-touch-fullscreen" />
 	<content="yes" name="apple-mobile-web-app-capable">
-	<content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
-	<content="width=device-width, initial-scale=1" name="viewport" />
-	<content="noindex" name="robots" />
-	<content="summary_large_image" name="twitter:card" />
-	<content="CAB仮ページ" name="twitter:title" />
-	<link rel="apple-touch-icon" />
-	<link href="/webpage/static/runtime/images/favicon.ico" rel="shortcut icon" />
-	<content="919039361464473" property="fb:app_id" />
-	<script src="/webpage/static/runtime/base-fonts.gz.js"></script>
-	<script src="/webpage/static/runtime/font-subgroup-kits/raleway.gz.js"></script>
-	<script src="/webpage/static/runtime/font-subgroup-kits/lato.gz.js"></script>
-	<script src="/webpage/static/runtime/font-subgroup-kits/spark-voltage.gz.js"></script>
-	<script src="/webpage/static/runtime/typekit-load.gz.js"></script>
-	<link href="/webpage/static/runtime/runtime.gz.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="style.css?v=1.0">
-	<style>
-		body {
-			background-color: black;
-			color: white;
-			/* テキストの色を白に設定 */
-			font-family: Arial, sans-serif;
-			line-height: 1.6;
-		}
+		<content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+		<content="width=device-width, initial-scale=1" name="viewport" />
+		<content="noindex" name="robots" />
+		<content="summary_large_image" name="twitter:card" />
+		<content="CAB仮ページ" name="twitter:title" />
+		<link rel="apple-touch-icon" />
+		<link href="/webpage/static/runtime/images/favicon.ico" rel="shortcut icon" />
+		<content="919039361464473" property="fb:app_id" />
+		<script src="/webpage/static/runtime/base-fonts.gz.js"></script>
+		<script src="/webpage/static/runtime/font-subgroup-kits/raleway.gz.js"></script>
+		<script src="/webpage/static/runtime/font-subgroup-kits/lato.gz.js"></script>
+		<script src="/webpage/static/runtime/font-subgroup-kits/spark-voltage.gz.js"></script>
+		<script src="/webpage/static/runtime/typekit-load.gz.js"></script>
+		<link href="/webpage/static/runtime/runtime.gz.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="style.css?v=1.0">
+		<style>
+			body {
+				background-color: black;
+				color: white;
+				/* テキストの色を白に設定 */
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+			}
 
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			color: white;
-			/* 見出しの色を白に設定 */
-			text-align: center;
-		}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				color: white;
+				/* 見出しの色を白に設定 */
+				text-align: center;
+			}
 
-		.section-content {
-			color: white;
-			/* セクション内のテキストの色を白に設定 */
-		}
+			.section-content {
+				color: white;
+				/* セクション内のテキストの色を白に設定 */
+			}
 
-		.single-column-section .section-background,
-		.title-section {
-			background-color: #484848;
-		}
+			.single-column-section .section-background,
+			.title-section {
+				background-color: #484848;
+			}
 
-		.title-header {
-			height: 100%;
-			text-align: center;
-			box-sizing: border-box;
-			font-size: 0;
-		}
-
-		.title-top-left .title-header,
-		.title-left .title-header,
-		.title-bottom-left .title-header {
-			text-align: left;
-		}
-
-		.title-top .title-header,
-		.title-center .title-header,
-		.title-bottom .title-header {
-			text-align: center;
-		}
-
-		.title-top-right .title-header,
-		.title-right .title-header,
-		.title-bottom-right .title-header {
-			text-align: right;
-		}
-
-		.title-header:before {
-			content: '';
-			display: inline-block;
-			width: 0;
-			height: 100%;
-			vertical-align: bottom;
-		}
-
-		.title-top-left .title-header:before,
-		.title-top .title-header:before,
-		.title-top-right .title-header:before {
-			vertical-align: top;
-		}
-
-		.title-left .title-header:before,
-		.title-center .title-header:before,
-		.title-right .title-header:before {
-			vertical-align: middle;
-		}
-
-		.title-header-view {
-			position: relative;
-			display: inline-block;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
-
-		.title-header .gradient-overlay {
-			background-color: rgba(0, 0, 0, 0);
-			background-image: -webkit-linear-gradient(-270deg
-					/*[gradient-angle-aligned-center]*/
-					, rgba(0, 0, 0, 0)
-					/*[gradient-stop-0-color-aligned-center]*/
-					0%
-					/*[gradient-stop-0-percent-aligned-center]*/
-					, rgba(0, 0, 0, 0.25)
-					/*[gradient-stop-1-color-aligned-center]*/
-					25%
-					/*[gradient-stop-1-percent-aligned-center]*/
-					, rgba(0, 0, 0, 0.50)
-					/*[gradient-stop-2-color-aligned-center]*/
-					50%
-					/*[gradient-stop-2-percent-aligned-center]*/
-					, rgba(0, 0, 0, 0.25)
-					/*[gradient-stop-3-color-aligned-center]*/
-					75%
-					/*[gradient-stop-3-percent-aligned-center]*/
-					, rgba(0, 0, 0, 0)
-					/*[gradient-stop-4-color-aligned-center]*/
-					100%
-					/*[gradient-stop-4-percent-aligned-center]*/
-				);
-			background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
-		}
-
-		.title-top-left .title-header .gradient-overlay,
-		.title-top .title-header .gradient-overlay,
-		.title-top-right .title-header .gradient-overlay {
-			background-image: -webkit-linear-gradient(-270deg
-					/*[gradient-angle-aligned-top]*/
-					, rgba(0, 0, 0, 0)
-					/*[gradient-stop-0-color-aligned-top]*/
-					0%
-					/*[gradient-stop-0-percent-aligned-top]*/
-					, rgba(0, 0, 0, 0.5)
-					/*[gradient-stop-1-color-aligned-top]*/
-					100%
-					/*[gradient-stop-1-percent-aligned-top]*/
-				);
-			background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-		}
-
-		.title-bottom-left .title-header .gradient-overlay,
-		.title-bottom .title-header .gradient-overlay,
-		.title-bottom-right .title-header .gradient-overlay {
-			background-image: -webkit-linear-gradient(-270deg
-					/*[gradient-angle-aligned-bottom]*/
-					, rgba(0, 0, 0, 0.5)
-					/*[gradient-stop-0-color-aligned-bottom]*/
-					0%
-					/*[gradient-stop-0-percent-aligned-bottom]*/
-					, rgba(0, 0, 0, 0)
-					/*[gradient-stop-1-color-aligned-bottom]*/
-					100%
-					/*[gradient-stop-1-percent-aligned-bottom]*/
-				);
-			background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-		}
-
-		.card-flipbook-section .section-content .content-container {
-			box-shadow: 0 0 4px rgba(0, 0, 0, .25);
-		}
-
-		.card-flipbook-section .section-content .card-right .content-container {
-			margin-left: auto;
-		}
-
-		.card-flipbook-section .section-content .card-center .content-container {
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.article,
-		.section {
-			background-color: rgba(51, 51, 51, 1);
-		}
-
-		.section-content .content-container {
-			padding-left: 20%;
-			padding-right: 20%;
-		}
-
-
-		strong,
-		b {
-			font-weight: bold;
-		}
-
-
-		.title-section {
-			background-color: #484848;
-		}
-
-		.title-header {
-			padding: 32px 4% 32px 4%;
-			background-color: transparent;
-		}
-
-		.title-header-view {
-			padding: 48px 5% 48px 5%;
-			width: auto;
-			max-width: 85%;
-			background-color: rgba(19, 19, 19, 0.5);
-			border: solid 2px rgba(255, 255, 255, 0.5);
-			border-radius: 0px 0px 0px 0px;
-		}
-
-		.title-header .gradient-overlay {
-			display: none;
-		}
-
-		.title-header .title {
-			margin: 0 0;
-			padding: 0 0;
-			max-height: 3.75em;
-			color: rgba(248, 246, 244, 1);
-			font-family: raleway, sans-serif;
-			font-size: 77px;
-			font-style: normal;
-			font-weight: 900;
-			text-transform: uppercase;
-			line-height: 1.25;
-			letter-spacing: normal;
-			text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-		}
-
-		.title-header .subtitle {
-			margin-top: 1rem;
-			padding: 0;
-			max-height: 4.65em;
-			color: rgba(248, 246, 244, 1);
-			font-family: raleway, sans-serif;
-			font-size: 24px;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none;
-			line-height: 1.55;
-			letter-spacing: normal;
-			text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-		}
-
-		@media (max-width: 767px) {
 			.title-header {
-				padding: 16px 4% 16px 4%;
+				height: 100%;
+				text-align: center;
+				box-sizing: border-box;
+				font-size: 0;
+			}
+
+			.title-top-left .title-header,
+			.title-left .title-header,
+			.title-bottom-left .title-header {
+				text-align: left;
+			}
+
+			.title-top .title-header,
+			.title-center .title-header,
+			.title-bottom .title-header {
+				text-align: center;
+			}
+
+			.title-top-right .title-header,
+			.title-right .title-header,
+			.title-bottom-right .title-header {
+				text-align: right;
+			}
+
+			.title-header:before {
+				content: '';
+				display: inline-block;
+				width: 0;
+				height: 100%;
+				vertical-align: bottom;
+			}
+
+			.title-top-left .title-header:before,
+			.title-top .title-header:before,
+			.title-top-right .title-header:before {
+				vertical-align: top;
+			}
+
+			.title-left .title-header:before,
+			.title-center .title-header:before,
+			.title-right .title-header:before {
+				vertical-align: middle;
 			}
 
 			.title-header-view {
-				padding: 24px 5% 24px 5%;
+				position: relative;
+				display: inline-block;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
 			}
-		}
 
-		@media (min-width: 1300px) {
+			.title-header .gradient-overlay {
+				background-color: rgba(0, 0, 0, 0);
+				background-image: -webkit-linear-gradient(-270deg
+						/*[gradient-angle-aligned-center]*/
+						, rgba(0, 0, 0, 0)
+						/*[gradient-stop-0-color-aligned-center]*/
+						0%
+						/*[gradient-stop-0-percent-aligned-center]*/
+						, rgba(0, 0, 0, 0.25)
+						/*[gradient-stop-1-color-aligned-center]*/
+						25%
+						/*[gradient-stop-1-percent-aligned-center]*/
+						, rgba(0, 0, 0, 0.50)
+						/*[gradient-stop-2-color-aligned-center]*/
+						50%
+						/*[gradient-stop-2-percent-aligned-center]*/
+						, rgba(0, 0, 0, 0.25)
+						/*[gradient-stop-3-color-aligned-center]*/
+						75%
+						/*[gradient-stop-3-percent-aligned-center]*/
+						, rgba(0, 0, 0, 0)
+						/*[gradient-stop-4-color-aligned-center]*/
+						100%
+						/*[gradient-stop-4-percent-aligned-center]*/
+					);
+				background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+			}
 
-			.title-top-left .title-header,
-			.title-left .title-header,
-			.title-bottom-left .title-header {
-				padding-left: 10%;
+			.title-top-left .title-header .gradient-overlay,
+			.title-top .title-header .gradient-overlay,
+			.title-top-right .title-header .gradient-overlay {
+				background-image: -webkit-linear-gradient(-270deg
+						/*[gradient-angle-aligned-top]*/
+						, rgba(0, 0, 0, 0)
+						/*[gradient-stop-0-color-aligned-top]*/
+						0%
+						/*[gradient-stop-0-percent-aligned-top]*/
+						, rgba(0, 0, 0, 0.5)
+						/*[gradient-stop-1-color-aligned-top]*/
+						100%
+						/*[gradient-stop-1-percent-aligned-top]*/
+					);
+				background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+			}
+
+			.title-bottom-left .title-header .gradient-overlay,
+			.title-bottom .title-header .gradient-overlay,
+			.title-bottom-right .title-header .gradient-overlay {
+				background-image: -webkit-linear-gradient(-270deg
+						/*[gradient-angle-aligned-bottom]*/
+						, rgba(0, 0, 0, 0.5)
+						/*[gradient-stop-0-color-aligned-bottom]*/
+						0%
+						/*[gradient-stop-0-percent-aligned-bottom]*/
+						, rgba(0, 0, 0, 0)
+						/*[gradient-stop-1-color-aligned-bottom]*/
+						100%
+						/*[gradient-stop-1-percent-aligned-bottom]*/
+					);
+				background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+			}
+
+			.card-flipbook-section .section-content .content-container {
+				box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+			}
+
+			.card-flipbook-section .section-content .card-right .content-container {
+				margin-left: auto;
+			}
+
+			.card-flipbook-section .section-content .card-center .content-container {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.article,
+			.section {
+				background-color: rgba(51, 51, 51, 1);
+			}
+
+			.section-content .content-container {
+				padding-left: 20%;
 				padding-right: 20%;
 			}
 
-			.title-top .title-header,
-			.title-center .title-header,
-			.title-bottom .title-header {
-				padding-left: 15%;
-				padding-right: 15%;
+
+			strong,
+			b {
+				font-weight: bold;
 			}
 
-			.title-top-right .title-header,
-			.title-right .title-header,
-			.title-bottom-right .title-header {
-				padding-left: 20%;
-				padding-right: 10%;
-			}
-		}
 
-		@media (min-width: 1800px) {
-
-			.title-top-left .title-header,
-			.title-left .title-header,
-			.title-bottom-left .title-header {
-				padding-left: 15%;
-				padding-right: 35%;
+			.title-section {
+				background-color: #484848;
 			}
 
-			.title-top .title-header,
-			.title-center .title-header,
-			.title-bottom .title-header {
-				padding-left: 25%;
-				padding-right: 25%;
+			.title-header {
+				padding: 32px 4% 32px 4%;
+				background-color: transparent;
 			}
 
-			.title-top-right .title-header,
-			.title-right .title-header,
-			.title-bottom-right .title-header {
-				padding-left: 35%;
-				padding-right: 15%;
-			}
-		}
-
-		@media (min-width: 2300px) {
-
-			.title-top-left .title-header,
-			.title-left .title-header,
-			.title-bottom-left .title-header {
-				padding-left: 20%;
-				padding-right: 40%;
+			.title-header-view {
+				padding: 48px 5% 48px 5%;
+				width: auto;
+				max-width: 85%;
+				background-color: rgba(19, 19, 19, 0.5);
+				border: solid 2px rgba(255, 255, 255, 0.5);
+				border-radius: 0px 0px 0px 0px;
 			}
 
-			.title-top .title-header,
-			.title-center .title-header,
-			.title-bottom .title-header {
-				padding-left: 30%;
-				padding-right: 30%;
+			.title-header .gradient-overlay {
+				display: none;
 			}
 
-			.title-top-right .title-header,
-			.title-right .title-header,
-			.title-bottom-right .title-header {
-				padding-left: 40%;
-				padding-right: 20%;
-			}
-		}
-
-
-		@media (max-width: 767px) {
 			.title-header .title {
-				font-size: 41px;
+				margin: 0 0;
+				padding: 0 0;
+				max-height: 3.75em;
+				color: rgba(248, 246, 244, 1);
+				font-family: raleway, sans-serif;
+				font-size: 77px;
+				font-style: normal;
+				font-weight: 900;
+				text-transform: uppercase;
+				line-height: 1.25;
+				letter-spacing: normal;
+				text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 			}
-		}
 
-		@media (max-width: 767px) {
 			.title-header .subtitle {
-				font-size: 20px;
+				margin-top: 1rem;
+				padding: 0;
+				max-height: 4.65em;
+				color: rgba(248, 246, 244, 1);
+				font-family: raleway, sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				text-transform: none;
+				line-height: 1.55;
+				letter-spacing: normal;
+				text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 			}
-		}
 
-		.content-container h3 {
-			z-index: 0;
-			font-family: raleway, sans-serif;
-			font-size: 48px;
-			font-style: normal;
-			font-weight: 900;
-			text-transform: uppercase;
-			line-height: 1.35;
-			letter-spacing: normal;
-			color: rgba(227, 225, 223, 1);
-			text-align: left;
-		}
+			@media (max-width: 767px) {
+				.title-header {
+					padding: 16px 4% 16px 4%;
+				}
 
-		@media (max-width: 767px) {
+				.title-header-view {
+					padding: 24px 5% 24px 5%;
+				}
+			}
+
+			@media (min-width: 1300px) {
+
+				.title-top-left .title-header,
+				.title-left .title-header,
+				.title-bottom-left .title-header {
+					padding-left: 10%;
+					padding-right: 20%;
+				}
+
+				.title-top .title-header,
+				.title-center .title-header,
+				.title-bottom .title-header {
+					padding-left: 15%;
+					padding-right: 15%;
+				}
+
+				.title-top-right .title-header,
+				.title-right .title-header,
+				.title-bottom-right .title-header {
+					padding-left: 20%;
+					padding-right: 10%;
+				}
+			}
+
+			@media (min-width: 1800px) {
+
+				.title-top-left .title-header,
+				.title-left .title-header,
+				.title-bottom-left .title-header {
+					padding-left: 15%;
+					padding-right: 35%;
+				}
+
+				.title-top .title-header,
+				.title-center .title-header,
+				.title-bottom .title-header {
+					padding-left: 25%;
+					padding-right: 25%;
+				}
+
+				.title-top-right .title-header,
+				.title-right .title-header,
+				.title-bottom-right .title-header {
+					padding-left: 35%;
+					padding-right: 15%;
+				}
+			}
+
+			@media (min-width: 2300px) {
+
+				.title-top-left .title-header,
+				.title-left .title-header,
+				.title-bottom-left .title-header {
+					padding-left: 20%;
+					padding-right: 40%;
+				}
+
+				.title-top .title-header,
+				.title-center .title-header,
+				.title-bottom .title-header {
+					padding-left: 30%;
+					padding-right: 30%;
+				}
+
+				.title-top-right .title-header,
+				.title-right .title-header,
+				.title-bottom-right .title-header {
+					padding-left: 40%;
+					padding-right: 20%;
+				}
+			}
+
+
+			@media (max-width: 767px) {
+				.title-header .title {
+					font-size: 41px;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.title-header .subtitle {
+					font-size: 20px;
+				}
+			}
+
 			.content-container h3 {
-				font-size: 29px;
+				z-index: 0;
+				font-family: raleway, sans-serif;
+				font-size: 48px;
+				font-style: normal;
+				font-weight: 900;
+				text-transform: uppercase;
+				line-height: 1.35;
+				letter-spacing: normal;
+				color: rgba(227, 225, 223, 1);
+				text-align: left;
 			}
-		}
 
-		.content-container h4 {
-			font-family: raleway, sans-serif;
-			font-size: 30px;
-			font-style: normal;
-			font-weight: 900;
-			text-transform: none;
-			line-height: 1.4;
-			letter-spacing: normal;
-			color: rgba(227, 225, 223, 1);
-			text-align: left;
-		}
+			@media (max-width: 767px) {
+				.content-container h3 {
+					font-size: 29px;
+				}
+			}
 
-		@media (max-width: 767px) {
 			.content-container h4 {
-				font-size: 22px;
+				font-family: raleway, sans-serif;
+				font-size: 30px;
+				font-style: normal;
+				font-weight: 900;
+				text-transform: none;
+				line-height: 1.4;
+				letter-spacing: normal;
+				color: rgba(227, 225, 223, 1);
+				text-align: left;
 			}
-		}
 
-		.single-column-section .content-container p,
-		.card-flipbook-section .content-container p {
-			font-family: lato, sans-serif;
-			font-size: 18px;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none;
-			line-height: 1.7;
-			letter-spacing: normal;
-			overflow-wrap: break-word;
-			color: rgba(227, 225, 223, 1);
-		}
-
-		@media (max-width: 767px) {
+			@media (max-width: 767px) {
+				.content-container h4 {
+					font-size: 22px;
+				}
+			}
 
 			.single-column-section .content-container p,
 			.card-flipbook-section .content-container p {
-				font-size: 17px;
+				font-family: lato, sans-serif;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				text-transform: none;
+				line-height: 1.7;
+				letter-spacing: normal;
+				overflow-wrap: break-word;
+				color: rgba(227, 225, 223, 1);
 			}
-		}
 
-		.content-container ul li {
-			font-family: lato, sans-serif;
-			font-size: 18px;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none;
-			line-height: 1.7;
-			letter-spacing: normal;
-			color: rgba(227, 225, 223, 1);
-			margin-left: 36px;
-			margin-right: 0px;
-		}
+			@media (max-width: 767px) {
 
-		@media (max-width: 767px) {
+				.single-column-section .content-container p,
+				.card-flipbook-section .content-container p {
+					font-size: 17px;
+				}
+			}
+
 			.content-container ul li {
-				font-size: 17px;
+				font-family: lato, sans-serif;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				text-transform: none;
+				line-height: 1.7;
+				letter-spacing: normal;
+				color: rgba(227, 225, 223, 1);
+				margin-left: 36px;
+				margin-right: 0px;
 			}
-		}
 
-		.content-container ol li {
-			font-family: lato, sans-serif;
-			font-size: 18px;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none;
-			line-height: 1.7;
-			letter-spacing: normal;
-			color: rgba(227, 225, 223, 1);
-			margin-left: 36px;
-			margin-right: 0px;
-		}
+			@media (max-width: 767px) {
+				.content-container ul li {
+					font-size: 17px;
+				}
+			}
 
-		@media (max-width: 767px) {
 			.content-container ol li {
-				font-size: 17px;
+				font-family: lato, sans-serif;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				text-transform: none;
+				line-height: 1.7;
+				letter-spacing: normal;
+				color: rgba(227, 225, 223, 1);
+				margin-left: 36px;
+				margin-right: 0px;
 			}
-		}
 
-		.content-container blockquote {
-			z-index: 0;
-			position: relative;
-			font-family: spark-voltage, sans-serif;
-			font-size: 30px;
-			font-style: normal;
-			font-weight: 300;
-			text-transform: none;
-			line-height: 1.4;
-			letter-spacing: normal;
-			color: rgba(227, 225, 223, 1);
-			text-align: center;
-			margin-top: 0px;
-			margin-bottom: 0px;
-			margin-left: 0px;
-			margin-right: 0px;
-			padding-top: .75em;
-			padding-bottom: .75em;
-			padding-left: 0px;
-			padding-right: 0px;
-		}
+			@media (max-width: 767px) {
+				.content-container ol li {
+					font-size: 17px;
+				}
+			}
 
-		.content-container blockquote:before {
-			content: "";
-			display: inline-block;
-			z-index: -1;
-			position: absolute;
-			top: 0px;
-			right: 35%;
-			bottom: auto;
-			left: 35%;
-			height: 3px;
-			background-color: rgba(227, 225, 223, 0.9);
-		}
-
-		.content-container blockquote:after {
-			content: "";
-			display: inline-block;
-			z-index: -2;
-			position: absolute;
-			top: auto;
-			right: 35%;
-			bottom: 0px;
-			left: 35%;
-			height: 3px;
-			background-color: rgba(227, 225, 223, 0.9);
-		}
-
-
-
-
-		@media (max-width: 767px) {
 			.content-container blockquote {
-				font-size: 22px;
+				z-index: 0;
+				position: relative;
+				font-family: spark-voltage, sans-serif;
+				font-size: 30px;
+				font-style: normal;
+				font-weight: 300;
+				text-transform: none;
+				line-height: 1.4;
+				letter-spacing: normal;
+				color: rgba(227, 225, 223, 1);
+				text-align: center;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				margin-right: 0px;
+				padding-top: .75em;
+				padding-bottom: .75em;
+				padding-left: 0px;
+				padding-right: 0px;
 			}
-		}
 
-		.image-wrapper {
-			overflow: hidden;
-		}
+			.content-container blockquote:before {
+				content: "";
+				display: inline-block;
+				z-index: -1;
+				position: absolute;
+				top: 0px;
+				right: 35%;
+				bottom: auto;
+				left: 35%;
+				height: 3px;
+				background-color: rgba(227, 225, 223, 0.9);
+			}
 
-		.card-flipbook-section .caption,
-		.single-column-section .caption {
-			font-family: lato, sans-serif;
-			font-size: 15px;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none;
-			line-height: 1.6;
-			letter-spacing: normal;
-			color: rgba(227, 225, 223, 1);
-			text-align: center;
-			margin: .5em 0px;
-		}
+			.content-container blockquote:after {
+				content: "";
+				display: inline-block;
+				z-index: -2;
+				position: absolute;
+				top: auto;
+				right: 35%;
+				bottom: 0px;
+				left: 35%;
+				height: 3px;
+				background-color: rgba(227, 225, 223, 0.9);
+			}
 
-		@media (max-width: 767px) {
+
+
+
+			@media (max-width: 767px) {
+				.content-container blockquote {
+					font-size: 22px;
+				}
+			}
+
+			.image-wrapper {
+				overflow: hidden;
+			}
 
 			.card-flipbook-section .caption,
 			.single-column-section .caption {
+				font-family: lato, sans-serif;
 				font-size: 15px;
+				font-style: normal;
+				font-weight: 400;
+				text-transform: none;
+				line-height: 1.6;
+				letter-spacing: normal;
+				color: rgba(227, 225, 223, 1);
+				text-align: center;
+				margin: .5em 0px;
 			}
-		}
 
-		.content-container a.link-button {
-			z-index: 0;
-			position: relative;
-			display: inline-block;
-			font-family: lato, sans-serif;
-			font-size: 20px;
-			font-style: normal;
-			font-weight: 700;
-			text-transform: none;
-			line-height: 1.6;
-			letter-spacing: normal;
-			text-decoration: none;
-			text-align: center;
-			color: rgba(255, 255, 255, 1);
-			padding-top: 2px;
-			padding-left: 0px;
-			padding-right: 8px;
-			padding-bottom: 2px;
+			@media (max-width: 767px) {
 
-			-webkit-transition: color .15s linear;
-			-moz-transition: color .15s linear;
-			-o-transition: color .15s linear;
-			-ms-transition: color .15s linear;
-			transition: color .15s linear;
-		}
+				.card-flipbook-section .caption,
+				.single-column-section .caption {
+					font-size: 15px;
+				}
+			}
 
-		.content-container a.link-button:before {
-			content: "";
-			display: inline-block;
-			z-index: -1;
-			position: absolute;
-			top: 0px;
-			right: auto;
-			bottom: 0px;
-			left: 100%;
-			width: 6px;
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDEyIDIwIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDI1NSwyNTUsMjU1LDEpOyIgZD0iTSAwIDAgTCAwIDIwIEwgMTIgMTAgTCAwIDAgWiIvPjwvc3ZnPg==');
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-
-		.content-container a.link-button:hover {
-			color: rgba(191, 187, 182, 1);
-		}
-
-		.content-container a.link-button:hover:before {
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDEyIDIwIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE5MSwxODcsMTgyLDEpOyIgZD0iTSAwIDAgTCAwIDIwIEwgMTIgMTAgTCAwIDAgWiIvPjwvc3ZnPg==');
-		}
-
-		@media (max-width: 767px) {
 			.content-container a.link-button {
+				z-index: 0;
+				position: relative;
+				display: inline-block;
+				font-family: lato, sans-serif;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 700;
+				text-transform: none;
+				line-height: 1.6;
+				letter-spacing: normal;
+				text-decoration: none;
+				text-align: center;
+				color: rgba(255, 255, 255, 1);
 				padding-top: 2px;
 				padding-left: 0px;
-				padding-right: 4px;
-				padding-bottom: 1px;
+				padding-right: 8px;
+				padding-bottom: 2px;
+
+				-webkit-transition: color .15s linear;
+				-moz-transition: color .15s linear;
+				-o-transition: color .15s linear;
+				-ms-transition: color .15s linear;
+				transition: color .15s linear;
 			}
-		}
 
-		@media (max-width: 767px) {
-			.content-container a.link-button {
-				font-size: 19px;
+			.content-container a.link-button:before {
+				content: "";
+				display: inline-block;
+				z-index: -1;
+				position: absolute;
+				top: 0px;
+				right: auto;
+				bottom: 0px;
+				left: 100%;
+				width: 6px;
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDEyIDIwIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDI1NSwyNTUsMjU1LDEpOyIgZD0iTSAwIDAgTCAwIDIwIEwgMTIgMTAgTCAwIDAgWiIvPjwvc3ZnPg==');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
 			}
-		}
 
-		.single-column-section .content-container a:not(.link-button),
-		.card-flipbook-section .content-container a:not(.link-button),
-		.photo-grid-section .content-container a:not(.link-button),
-		.full-width-section .content-container a:not(.link-button) {
-			background-color: transparent;
-			color: rgba(166, 193, 209, 1);
-			text-decoration:
-				none;
-			-webkit-transition: color .15s linear;
-			-moz-transition: color .15s linear;
-			-o-transition: color .15s linear;
-			-ms-transition: color .15s linear;
-			transition: color .15s linear;
-		}
+			.content-container a.link-button:hover {
+				color: rgba(191, 187, 182, 1);
+			}
 
-		.single-column-section .content-container a:not(.link-button):hover,
-		.card-flipbook-section .content-container a:not(.link-button):hover,
-		.photo-grid-section .content-container a:not(.link-button):hover,
-		.full-width-section .content-container a:not(.link-button):hover {
-			color: rgba(114, 189, 233, 1);
-		}
+			.content-container a.link-button:hover:before {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDEyIDIwIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE5MSwxODcsMTgyLDEpOyIgZD0iTSAwIDAgTCAwIDIwIEwgMTIgMTAgTCAwIDAgWiIvPjwvc3ZnPg==');
+			}
 
-		.full-width-section .caption {
-			font-family: lato, sans-serif;
-			font-size: 15px;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none;
-			line-height: 1.6;
-			letter-spacing: normal;
-			color: rgba(227, 225, 223, 1);
-			text-align: center;
-			margin: .5em 0px;
-		}
+			@media (max-width: 767px) {
+				.content-container a.link-button {
+					padding-top: 2px;
+					padding-left: 0px;
+					padding-right: 4px;
+					padding-bottom: 1px;
+				}
+			}
 
-		.full-width-section .caption {
-			padding-right: 5%;
-			padding-left: 5%;
-		}
+			@media (max-width: 767px) {
+				.content-container a.link-button {
+					font-size: 19px;
+				}
+			}
 
+			.single-column-section .content-container a:not(.link-button),
+			.card-flipbook-section .content-container a:not(.link-button),
+			.photo-grid-section .content-container a:not(.link-button),
+			.full-width-section .content-container a:not(.link-button) {
+				background-color: transparent;
+				color: rgba(166, 193, 209, 1);
+				text-decoration:
+					none;
+				-webkit-transition: color .15s linear;
+				-moz-transition: color .15s linear;
+				-o-transition: color .15s linear;
+				-ms-transition: color .15s linear;
+				transition: color .15s linear;
+			}
 
+			.single-column-section .content-container a:not(.link-button):hover,
+			.card-flipbook-section .content-container a:not(.link-button):hover,
+			.photo-grid-section .content-container a:not(.link-button):hover,
+			.full-width-section .content-container a:not(.link-button):hover {
+				color: rgba(114, 189, 233, 1);
+			}
 
-		@media (max-width: 767px) {
 			.full-width-section .caption {
+				font-family: lato, sans-serif;
 				font-size: 15px;
+				font-style: normal;
+				font-weight: 400;
+				text-transform: none;
+				line-height: 1.6;
+				letter-spacing: normal;
+				color: rgba(227, 225, 223, 1);
+				text-align: center;
+				margin: .5em 0px;
 			}
-		}
 
-		.fullscreen-photo-section .pull-quote {
-			position: absolute;
-			top: 0px;
-			right: auto;
-			bottom: auto;
-			left: 0px;
-			margin: 96px 32px;
-			padding: 0;
-			max-width: 50%;
-			font-family: spark-voltage, sans-serif;
-			font-size: 30px;
-			font-style: normal;
-			font-weight: 300;
-			text-transform: none;
-			line-height: 1.4;
-			letter-spacing: normal;
-			text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
-			color: rgba(255, 255, 255, 1);
-			background-color: transparent;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			-o-box-sizing: border-box;
-			-ms-box-sizing: border-box;
-			box-sizing: border-box;
-		}
+			.full-width-section .caption {
+				padding-right: 5%;
+				padding-left: 5%;
+			}
 
-		.fullscreen-photo-section .pull-quote .content-container {
-			padding: 24px;
-			color: rgba(255, 255, 255, 1);
-			background-color: rgba(51, 51, 51, 0.8);
-		}
 
-		.fullscreen-photo-section .pull-quote .content-container.empty {
-			padding: 12px;
-		}
 
-		@media (max-width: 767px) {
+			@media (max-width: 767px) {
+				.full-width-section .caption {
+					font-size: 15px;
+				}
+			}
+
 			.fullscreen-photo-section .pull-quote {
-				font-size: 22px;
-				margin: 48px 16px;
+				position: absolute;
+				top: 0px;
+				right: auto;
+				bottom: auto;
+				left: 0px;
+				margin: 96px 32px;
+				padding: 0;
+				max-width: 50%;
+				font-family: spark-voltage, sans-serif;
+				font-size: 30px;
+				font-style: normal;
+				font-weight: 300;
+				text-transform: none;
+				line-height: 1.4;
+				letter-spacing: normal;
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+				color: rgba(255, 255, 255, 1);
+				background-color: transparent;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-o-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				box-sizing: border-box;
 			}
 
 			.fullscreen-photo-section .pull-quote .content-container {
-				padding: 12px;
+				padding: 24px;
+				color: rgba(255, 255, 255, 1);
+				background-color: rgba(51, 51, 51, 0.8);
 			}
 
 			.fullscreen-photo-section .pull-quote .content-container.empty {
-				padding: 6px;
-			}
-		}
-
-		.window-section .pull-quote {
-			position: absolute;
-			top: 0px;
-			right: auto;
-			bottom: auto;
-			left: 0px;
-			margin: 48px 32px;
-			padding: 0;
-			max-width: 50%;
-			font-family: spark-voltage, sans-serif;
-			font-size: 30px;
-			font-style: normal;
-			font-weight: 300;
-			text-transform: none;
-			line-height: 1.4;
-			letter-spacing: normal;
-			text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
-			color: rgba(255, 255, 255, 1);
-			background-color: transparent;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			-o-box-sizing: border-box;
-			-ms-box-sizing: border-box;
-			box-sizing: border-box;
-		}
-
-		.window-section .pull-quote .content-container {
-			padding: 24px;
-			color: rgba(255, 255, 255, 1);
-			background-color: rgba(51, 51, 51, 0.8);
-		}
-
-		.window-section .pull-quote .content-container.empty {
-			padding: 12px;
-		}
-
-		@media (max-width: 767px) {
-			.window-section .pull-quote {
-				font-size: 22px;
-				margin: 24px 16px;
-			}
-
-			.window-section .pull-quote .content-container {
 				padding: 12px;
 			}
 
+			@media (max-width: 767px) {
+				.fullscreen-photo-section .pull-quote {
+					font-size: 22px;
+					margin: 48px 16px;
+				}
+
+				.fullscreen-photo-section .pull-quote .content-container {
+					padding: 12px;
+				}
+
+				.fullscreen-photo-section .pull-quote .content-container.empty {
+					padding: 6px;
+				}
+			}
+
+			.window-section .pull-quote {
+				position: absolute;
+				top: 0px;
+				right: auto;
+				bottom: auto;
+				left: 0px;
+				margin: 48px 32px;
+				padding: 0;
+				max-width: 50%;
+				font-family: spark-voltage, sans-serif;
+				font-size: 30px;
+				font-style: normal;
+				font-weight: 300;
+				text-transform: none;
+				line-height: 1.4;
+				letter-spacing: normal;
+				text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+				color: rgba(255, 255, 255, 1);
+				background-color: transparent;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-o-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			.window-section .pull-quote .content-container {
+				padding: 24px;
+				color: rgba(255, 255, 255, 1);
+				background-color: rgba(51, 51, 51, 0.8);
+			}
+
 			.window-section .pull-quote .content-container.empty {
-				padding: 6px;
+				padding: 12px;
 			}
-		}
+
+			@media (max-width: 767px) {
+				.window-section .pull-quote {
+					font-size: 22px;
+					margin: 24px 16px;
+				}
+
+				.window-section .pull-quote .content-container {
+					padding: 12px;
+				}
+
+				.window-section .pull-quote .content-container.empty {
+					padding: 6px;
+				}
+			}
 
 
-		.grid-caption {
-			margin: .5em 0px;
-			font-family: lato, sans-serif;
-			font-size: 15px;
-			font-style: normal;
-			font-weight: 400;
-			text-transform: none;
-			line-height: 1.6;
-			letter-spacing: normal;
-			text-align: center;
-			color: rgba(227, 225, 223, 1)
-		}
-
-
-		@media (max-width: 767px) {
 			.grid-caption {
+				margin: .5em 0px;
+				font-family: lato, sans-serif;
 				font-size: 15px;
+				font-style: normal;
+				font-weight: 400;
+				text-transform: none;
+				line-height: 1.6;
+				letter-spacing: normal;
+				text-align: center;
+				color: rgba(227, 225, 223, 1)
 			}
-		}
 
-		.card-flipbook-section .section-content .content-container {
-			background-color: rgba(51, 51, 51, 0.9);
-		}
 
-		.content-spacer {
-			height: 0.125rem;
-		}
+			@media (max-width: 767px) {
+				.grid-caption {
+					font-size: 15px;
+				}
+			}
 
-		.content-item-spacer {
-			height: 5.000rem;
-		}
+			.card-flipbook-section .section-content .content-container {
+				background-color: rgba(51, 51, 51, 0.9);
+			}
 
-		.section .section-content .content-container {
-			padding-top: 2.500rem;
-			padding-bottom: 2.500rem;
-		}
-
-		.full-width-section .section-content .content-container {
-			padding-top: 0;
-			padding-bottom: 0;
-		}
-
-		.section.large-content-spacing-top .section-content .content-container {
-			padding-top: 5.000rem;
-		}
-
-		.section.large-content-spacing-bottom .section-content .content-container {
-			padding-bottom: 5.000rem;
-		}
-
-		.content-container> :first-child {
-			margin-top: 0;
-		}
-
-		.content-container> :last-child {
-			margin-bottom: 0;
-		}
-
-		ul,
-		ol {
-			padding: 0
-		}
-
-		li {
-			margin-bottom: 0.500rem;
-		}
-
-		li:last-child {
-			margin-bottom: 0;
-		}
-
-		.content-container p {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+p {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+ol {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+ul {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3 {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+h3 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4 {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+h4 {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+blockquote {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+.link-button-wrapper {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image {
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-
-		.content-container p+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ol+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.content-container ul+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h3+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.content-container h4+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.content-container blockquote+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.content-container .link-button-wrapper+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.content-container div.image+div.image {
-			margin-top: 2.500rem;
-		}
-
-		.photo-grid-section+.single-column-section h3:first-child,
-		.photo-grid-section+.single-column-section h4:first-child,
-		.photo-grid-section+.single-column-section blockquote:first-child {
-			margin-top: 2.500rem;
-		}
-
-		.photo-grid-section+.single-column-section blockquote:last-child {
-			margin-top: 2.500rem;
-		}
-
-		@media (max-width: 767px) {
 			.content-spacer {
 				height: 0.125rem;
 			}
 
 			.content-item-spacer {
-				height: 2.500rem;
+				height: 5.000rem;
 			}
 
 			.section .section-content .content-container {
-				padding-top: 1.250rem;
-				padding-bottom: 1.250rem;
+				padding-top: 2.500rem;
+				padding-bottom: 2.500rem;
 			}
 
 			.full-width-section .section-content .content-container {
@@ -1137,11 +783,11 @@
 			}
 
 			.section.large-content-spacing-top .section-content .content-container {
-				padding-top: 2.500rem;
+				padding-top: 5.000rem;
 			}
 
 			.section.large-content-spacing-bottom .section-content .content-container {
-				padding-bottom: 2.500rem;
+				padding-bottom: 5.000rem;
 			}
 
 			.content-container> :first-child {
@@ -1158,7 +804,7 @@
 			}
 
 			li {
-				margin-bottom: 0.250rem;
+				margin-bottom: 0.500rem;
 			}
 
 			li:last-child {
@@ -1171,35 +817,35 @@
 			}
 
 			.content-container p+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+p {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol {
@@ -1208,35 +854,35 @@
 			}
 
 			.content-container p+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+ol {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul {
@@ -1245,35 +891,35 @@
 			}
 
 			.content-container p+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+ul {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3 {
@@ -1282,35 +928,35 @@
 			}
 
 			.content-container p+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+h3 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4 {
@@ -1319,35 +965,35 @@
 			}
 
 			.content-container p+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+h4 {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote {
@@ -1356,35 +1002,35 @@
 			}
 
 			.content-container p+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+blockquote {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper {
@@ -1393,35 +1039,35 @@
 			}
 
 			.content-container p+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+.link-button-wrapper {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image {
@@ -1430,359 +1076,713 @@
 			}
 
 			.content-container p+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ol+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container ul+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h3+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container h4+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container blockquote+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container .link-button-wrapper+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.content-container div.image+div.image {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.photo-grid-section+.single-column-section h3:first-child,
 			.photo-grid-section+.single-column-section h4:first-child,
 			.photo-grid-section+.single-column-section blockquote:first-child {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
 
 			.photo-grid-section+.single-column-section blockquote:last-child {
-				margin-top: 1.250rem;
+				margin-top: 2.500rem;
 			}
-		}
 
-		.section-content .content-container {
-			padding-left: 20%;
-			padding-right: 20%;
-		}
+			@media (max-width: 767px) {
+				.content-spacer {
+					height: 0.125rem;
+				}
 
-		.card-flipbook-section .section-content .content-container {
-			width: 50%;
-			margin: 32px 32px;
-			padding: 56px 32px;
-		}
+				.content-item-spacer {
+					height: 2.500rem;
+				}
 
-		.card-flipbook-section .section-content .card-center .content-container {
-			width: 65%;
-			max-width: 900px;
-		}
+				.section .section-content .content-container {
+					padding-top: 1.250rem;
+					padding-bottom: 1.250rem;
+				}
 
-		@media (max-width: 768px) {
+				.full-width-section .section-content .content-container {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+
+				.section.large-content-spacing-top .section-content .content-container {
+					padding-top: 2.500rem;
+				}
+
+				.section.large-content-spacing-bottom .section-content .content-container {
+					padding-bottom: 2.500rem;
+				}
+
+				.content-container> :first-child {
+					margin-top: 0;
+				}
+
+				.content-container> :last-child {
+					margin-bottom: 0;
+				}
+
+				ul,
+				ol {
+					padding: 0
+				}
+
+				li {
+					margin-bottom: 0.250rem;
+				}
+
+				li:last-child {
+					margin-bottom: 0;
+				}
+
+				.content-container p {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+p {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+ol {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+ul {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3 {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+h3 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4 {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+h4 {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+blockquote {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+.link-button-wrapper {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.content-container p+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ol+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.content-container ul+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h3+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.content-container h4+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.content-container blockquote+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.content-container .link-button-wrapper+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.content-container div.image+div.image {
+					margin-top: 1.250rem;
+				}
+
+				.photo-grid-section+.single-column-section h3:first-child,
+				.photo-grid-section+.single-column-section h4:first-child,
+				.photo-grid-section+.single-column-section blockquote:first-child {
+					margin-top: 1.250rem;
+				}
+
+				.photo-grid-section+.single-column-section blockquote:last-child {
+					margin-top: 1.250rem;
+				}
+			}
+
 			.section-content .content-container {
-				padding-left: 12.5%;
-				padding-right: 12.5%;
+				padding-left: 20%;
+				padding-right: 20%;
 			}
 
 			.card-flipbook-section .section-content .content-container {
-				width: 60%;
+				width: 50%;
 				margin: 32px 32px;
 				padding: 56px 32px;
 			}
 
 			.card-flipbook-section .section-content .card-center .content-container {
-				width: 75%;
-				max-width: 900px;
-			}
-		}
-
-		@media (max-width: 480px) {
-			.section-content .content-container {
-				padding-left: 7%;
-				padding-right: 7%;
-			}
-
-			.card-flipbook-section .section-content .content-container {
-				width: 70%;
-				margin: 18px 14px;
-				padding: 31px 13px;
-			}
-
-			.card-flipbook-section .section-content .card-center .content-container {
-				width: 75%;
-				max-width: 900px;
-			}
-		}
-
-		@media (max-width: 320px) {
-			.section-content .content-container {
-				padding-left: 7%;
-				padding-right: 7%;
-			}
-
-			.card-flipbook-section .section-content .content-container {
-				width: 70%;
-				margin: 18px 14px;
-				padding: 31px 12px;
-			}
-
-			.card-flipbook-section .section-content .card-center .content-container {
-				width: 75%;
-				max-width: 900px;
-			}
-		}
-
-		@media (min-width: 1300px) {
-			.section-content .content-container {
-				padding-left: 25%;
-				padding-right: 25%;
-			}
-
-			.card-flipbook-section .section-content .content-container {
-				width: 40%;
-				margin: 32px 32px;
-				padding: 56px 32px;
-				max-width: 580px;
-			}
-
-			.card-flipbook-section .section-content .card-center .content-container {
 				width: 65%;
 				max-width: 900px;
 			}
-		}
 
-		@media (min-width: 1800px) {
-			.section-content .content-container {
-				padding-left: 30%;
-				padding-right: 30%;
+			@media (max-width: 768px) {
+				.section-content .content-container {
+					padding-left: 12.5%;
+					padding-right: 12.5%;
+				}
+
+				.card-flipbook-section .section-content .content-container {
+					width: 60%;
+					margin: 32px 32px;
+					padding: 56px 32px;
+				}
+
+				.card-flipbook-section .section-content .card-center .content-container {
+					width: 75%;
+					max-width: 900px;
+				}
 			}
 
-			.card-flipbook-section .section-content .content-container {
-				width: 30%;
-				margin: 32px 80px;
-				padding: 56px 32px;
-				max-width: 580px;
+			@media (max-width: 480px) {
+				.section-content .content-container {
+					padding-left: 7%;
+					padding-right: 7%;
+				}
+
+				.card-flipbook-section .section-content .content-container {
+					width: 70%;
+					margin: 18px 14px;
+					padding: 31px 13px;
+				}
+
+				.card-flipbook-section .section-content .card-center .content-container {
+					width: 75%;
+					max-width: 900px;
+				}
 			}
 
-			.card-flipbook-section .section-content .card-center .content-container {
-				width: 65%;
-				max-width: 900px;
+			@media (max-width: 320px) {
+				.section-content .content-container {
+					padding-left: 7%;
+					padding-right: 7%;
+				}
+
+				.card-flipbook-section .section-content .content-container {
+					width: 70%;
+					margin: 18px 14px;
+					padding: 31px 12px;
+				}
+
+				.card-flipbook-section .section-content .card-center .content-container {
+					width: 75%;
+					max-width: 900px;
+				}
 			}
-		}
 
-		@media (min-width: 2300px) {
-			.section-content .content-container {
-				padding-left: 33%;
-				padding-right: 33%;
+			@media (min-width: 1300px) {
+				.section-content .content-container {
+					padding-left: 25%;
+					padding-right: 25%;
+				}
+
+				.card-flipbook-section .section-content .content-container {
+					width: 40%;
+					margin: 32px 32px;
+					padding: 56px 32px;
+					max-width: 580px;
+				}
+
+				.card-flipbook-section .section-content .card-center .content-container {
+					width: 65%;
+					max-width: 900px;
+				}
 			}
 
-			.card-flipbook-section .section-content .content-container {
-				width: 25%;
-				margin: 32px 80px;
-				padding: 56px 32px;
-				max-width: 580px;
+			@media (min-width: 1800px) {
+				.section-content .content-container {
+					padding-left: 30%;
+					padding-right: 30%;
+				}
+
+				.card-flipbook-section .section-content .content-container {
+					width: 30%;
+					margin: 32px 80px;
+					padding: 56px 32px;
+					max-width: 580px;
+				}
+
+				.card-flipbook-section .section-content .card-center .content-container {
+					width: 65%;
+					max-width: 900px;
+				}
 			}
 
-			.card-flipbook-section .section-content .card-center .content-container {
-				width: 65%;
-				max-width: 900px;
+			@media (min-width: 2300px) {
+				.section-content .content-container {
+					padding-left: 33%;
+					padding-right: 33%;
+				}
+
+				.card-flipbook-section .section-content .content-container {
+					width: 25%;
+					margin: 32px 80px;
+					padding: 56px 32px;
+					max-width: 580px;
+				}
+
+				.card-flipbook-section .section-content .card-center .content-container {
+					width: 65%;
+					max-width: 900px;
+				}
 			}
-		}
 
-		.section.author-section .author-appreciation-container {
-			border-color: rgba(227, 225, 223, 0.5);
-		}
+			.section.author-section .author-appreciation-container {
+				border-color: rgba(227, 225, 223, 0.5);
+			}
 
-		.section.author-section .author {
-			font-family: lato;
-			color: rgba(227, 225, 223, 1);
-		}
+			.section.author-section .author {
+				font-family: lato;
+				color: rgba(227, 225, 223, 1);
+			}
 
-		.section.author-section .appreciate-button {
-			color: rgba(227, 225, 223, 0.5);
-			border-color: rgba(227, 225, 223, 0.5);
-		}
+			.section.author-section .appreciate-button {
+				color: rgba(227, 225, 223, 0.5);
+				border-color: rgba(227, 225, 223, 0.5);
+			}
 
-		.section.author-section .appreciate-button:before {
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
-		}
+			.section.author-section .appreciate-button:before {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
+			}
 
-		.section.author-section .appreciate-button:after {
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNiIvPjwvc3ZnPg==');
-		}
+			.section.author-section .appreciate-button:after {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNiIvPjwvc3ZnPg==');
+			}
 
-		.section.author-section .appreciate-button.appreciated:before {
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
-		}
+			.section.author-section .appreciate-button.appreciated:before {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
+			}
 
-		.section.author-section .appreciate-button.appreciated:after {
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTE2LDI2TDIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNnogTTkuMiw0LjdDOCw0LjcsNi45LDUuMiw2LDUuOUM1LjMsNi41LDQuOCw3LjQsNC44LDguNGMwLDEsMC41LDEuOSwxLjIsMi41bDEwLDguOGwxMC04LjhjMC43LTAuNiwxLjItMS41LDEuMi0yLjVjMC0xLTAuNS0xLjktMS4yLTIuNWMtMS45LTEuNS00LjUtMS41LTYuNCwwYy0wLjcsMC42LTEuMiwxLjUtMS4yLDIuNWgtNC44YzAtMS0wLjUtMS45LTEuMi0yLjVDMTEuNSw1LjEsMTAuNCw0LjcsOS4yLDQuN3oiLz48L3N2Zz4=');
-		}
+			.section.author-section .appreciate-button.appreciated:after {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTE2LDI2TDIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNnogTTkuMiw0LjdDOCw0LjcsNi45LDUuMiw2LDUuOUM1LjMsNi41LDQuOCw3LjQsNC44LDguNGMwLDEsMC41LDEuOSwxLjIsMi41bDEwLDguOGwxMC04LjhjMC43LTAuNiwxLjItMS41LDEuMi0yLjVjMC0xLTAuNS0xLjktMS4yLTIuNWMtMS45LTEuNS00LjUtMS41LTYuNCwwYy0wLjcsMC42LTEuMiwxLjUtMS4yLDIuNWgtNC44YzAtMS0wLjUtMS45LTEuMi0yLjVDMTEuNSw1LjEsMTAuNCw0LjcsOS4yLDQuN3oiLz48L3N2Zz4=');
+			}
 
-		.publication-viewer.touch-disabled .section.author-section .appreciate-button:hover {
-			color: rgba(227, 225, 223, 1);
-			border-color: rgba(227, 225, 223, 1);
-		}
+			.publication-viewer.touch-disabled .section.author-section .appreciate-button:hover {
+				color: rgba(227, 225, 223, 1);
+				border-color: rgba(227, 225, 223, 1);
+			}
 
-		.publication-viewer.touch-disabled .section.author-section .appreciate-button:active {
-			color: rgba(227, 225, 223, 0.5);
-			border-color: rgba(227, 225, 223, 0.5);
-		}
+			.publication-viewer.touch-disabled .section.author-section .appreciate-button:active {
+				color: rgba(227, 225, 223, 0.5);
+				border-color: rgba(227, 225, 223, 0.5);
+			}
 
-		.publication-viewer.touch-disabled .section.author-section .appreciate-button:active:after {
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
-		}
+			.publication-viewer.touch-disabled .section.author-section .appreciate-button:active:after {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
+			}
 
-		.publication-viewer.touch-disabled .section.author-section .appreciate-button.appreciated:active:after {
-			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
-		}
+			.publication-viewer.touch-disabled .section.author-section .appreciate-button.appreciated:active:after {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDIyNywyMjUsMjIzLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
+			}
 
 
-		.section.credits-section {
-			color: rgba(227, 225, 223, 1);
-		}
+			.section.credits-section {
+				color: rgba(227, 225, 223, 1);
+			}
 
-		div.image {
-			-webkit-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -webkit-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			-moz-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -moz-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			-o-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -o-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			-ms-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -ms-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+			div.image {
+				-webkit-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -webkit-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+				-moz-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -moz-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+				-o-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -o-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+				-ms-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -ms-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+				transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
-			opacity: 1;
+				opacity: 1;
 
-			-webkit-transform: translate3d(0, 0, 0);
-			-moz-transform: translate3d(0, 0, 0);
-			-o-transform: translate3d(0, 0, 0);
-			-ms-transform: translate3d(0, 0, 0);
-			transform: translate3d(0, 0, 0);
-		}
+				-webkit-transform: translate3d(0, 0, 0);
+				-moz-transform: translate3d(0, 0, 0);
+				-o-transform: translate3d(0, 0, 0);
+				-ms-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
 
-		div.image.hidden {
-			opacity: 0;
+			div.image.hidden {
+				opacity: 0;
 
-			-webkit-transform: translate3d(0, 40px, 0);
-			-moz-transform: translate3d(0, 40px, 0);
-			-o-transform: translate3d(0, 40px, 0);
-			-ms-transform: translate3d(0, 40px, 0);
-			transform: translate3d(0, 40px, 0);
-		}
+				-webkit-transform: translate3d(0, 40px, 0);
+				-moz-transform: translate3d(0, 40px, 0);
+				-o-transform: translate3d(0, 40px, 0);
+				-ms-transform: translate3d(0, 40px, 0);
+				transform: translate3d(0, 40px, 0);
+			}
 
-		.caption,
-		.grid-caption {
-			-webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			-moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			-o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			-ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+			.caption,
+			.grid-caption {
+				-webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				-moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				-o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				-ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 
-			opacity: 1;
+				opacity: 1;
 
-			-webkit-transform: translate3d(0, 0, 0);
-			-moz-transform: translate3d(0, 0, 0);
-			-o-transform: translate3d(0, 0, 0);
-			-ms-transform: translate3d(0, 0, 0);
-			transform: translate3d(0, 0, 0);
-		}
+				-webkit-transform: translate3d(0, 0, 0);
+				-moz-transform: translate3d(0, 0, 0);
+				-o-transform: translate3d(0, 0, 0);
+				-ms-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
 
-		.caption.hidden,
-		.grid-caption.hidden {
-			opacity: 0;
+			.caption.hidden,
+			.grid-caption.hidden {
+				opacity: 0;
 
-			-webkit-transform: translate3d(20px, 0, 0);
-			-moz-transform: translate3d(20px, 0, 0);
-			-o-transform: translate3d(20px, 0, 0);
-			-ms-transform: translate3d(20px, 0, 0);
-			transform: translate3d(20px, 0, 0);
-		}
+				-webkit-transform: translate3d(20px, 0, 0);
+				-moz-transform: translate3d(20px, 0, 0);
+				-o-transform: translate3d(20px, 0, 0);
+				-ms-transform: translate3d(20px, 0, 0);
+				transform: translate3d(20px, 0, 0);
+			}
 
-		blockquote {
-			-webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			-moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			-o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			-ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-			transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+			blockquote {
+				-webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				-moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				-o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				-ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+				transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 
-			opacity: 1;
+				opacity: 1;
 
-			-webkit-transform: translate3d(0, 0, 0);
-			-moz-transform: translate3d(0, 0, 0);
-			-o-transform: translate3d(0, 0, 0);
-			-ms-transform: translate3d(0, 0, 0);
-			transform: translate3d(0, 0, 0);
-		}
+				-webkit-transform: translate3d(0, 0, 0);
+				-moz-transform: translate3d(0, 0, 0);
+				-o-transform: translate3d(0, 0, 0);
+				-ms-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
 
-		blockquote.hidden {
-			opacity: 0;
+			blockquote.hidden {
+				opacity: 0;
 
-			-webkit-transform: translate3d(20px, 0, 0);
-			-moz-transform: translate3d(20px, 0, 0);
-			-o-transform: translate3d(20px, 0, 0);
-			-ms-transform: translate3d(20px, 0, 0);
-			transform: translate3d(20px, 0, 0);
-		}
+				-webkit-transform: translate3d(20px, 0, 0);
+				-moz-transform: translate3d(20px, 0, 0);
+				-o-transform: translate3d(20px, 0, 0);
+				-ms-transform: translate3d(20px, 0, 0);
+				transform: translate3d(20px, 0, 0);
+			}
 
-		.link-button-wrapper,
-		.link-button-wrapper.link-left {
-			text-align: left;
-		}
+			.link-button-wrapper,
+			.link-button-wrapper.link-left {
+				text-align: left;
+			}
 
-		.link-button-wrapper.link-center {
-			text-align: center;
-		}
+			.link-button-wrapper.link-center {
+				text-align: center;
+			}
 
-		.link-button-wrapper.link-right {
-			text-align: right;
-		}
+			.link-button-wrapper.link-right {
+				text-align: right;
+			}
 
-		p.text-left,
-		h3.text-left,
-		h4.text-left,
-		.caption.text-left,
-		.grid-caption.text-left {
-			text-align: left;
-		}
+			p.text-left,
+			h3.text-left,
+			h4.text-left,
+			.caption.text-left,
+			.grid-caption.text-left {
+				text-align: left;
+			}
 
-		.caption,
-		.grid-caption,
+			.caption,
+			.grid-caption,
 
-		p.text-center,
-		h3.text-center,
-		h4.text-center,
-		.caption.text-center,
-		.grid-caption.text-center {
-			text-align: center;
-		}
+			p.text-center,
+			h3.text-center,
+			h4.text-center,
+			.caption.text-center,
+			.grid-caption.text-center {
+				text-align: center;
+			}
 
-		p.text-right,
-		h3.text-right,
-		h4.text-right,
-		.caption.text-right,
-		.grid-caption.text-right {
-			text-align: right;
-		}
+			p.text-right,
+			h3.text-right,
+			h4.text-right,
+			.caption.text-right,
+			.grid-caption.text-right {
+				text-align: right;
+			}
 
-		.caption-right .pull-quote {
-			right: 3%;
-			left: auto;
-			margin-left: 0;
-			margin-right: 2rem;
-		}
-	</style>
-	<noscript data-href="/webpage/static/runtime/noscript.gz.css" id="noscript-static-layout">
-		<link href="/webpage/static/runtime/noscript.gz.css" rel="stylesheet" type="text/css" />
-	</noscript>
-	</>
+			.caption-right .pull-quote {
+				right: 3%;
+				left: auto;
+				margin-left: 0;
+				margin-right: 2rem;
+			}
+		</style>
+		<noscript data-href="/webpage/static/runtime/noscript.gz.css" id="noscript-static-layout">
+			<link href="/webpage/static/runtime/noscript.gz.css" rel="stylesheet" type="text/css" />
+		</noscript>
+		</>
 </head>
 
 <body class="">
@@ -1844,183 +1844,147 @@
 													<div class="link-button-wrapper link-left">
 														<div class="embedded-link-wrapper widescreen-aspect-ratio">
 															<div class="video-container">
-    <iframe width="560" height="315" src="https://youtube.com/embed/bJM6hCRvJHQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-</div>
+																<iframe width="560" height="315"
+																	src="https://youtube.com/embed/bJM6hCRvJHQ?enablejsapi=1"
+																	frameborder="0" allowfullscreen></iframe>
+															</div>
 
-													</div>
-													<p class="text-center">
-														それ以外の記録自体もあるが、しかし計画段階で止まったものも多かった。それは何故か、Nコン…即ちNHKの主催するコンテストへの応募であった。長らく動画の中でも人気を誇り、映画を個人撮影する事も目標としていたが、事件は起きた。
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="section spacer-section content-spacer top-shadow bottom-shadow"
-									data-layer="1" data-layer-name="over" data-section-behavior="nightcap-spacer">
-								</div>
-								<div class="section card-flipbook-section" data-layer="-1" data-layer-name="under"
-									data-section-behavior="nightcap-column-overlay" data-spacing=".75">
-									<div class="section-view">
-										<div class="section-background">
-											<div class="section-background-image" data-pan-and-zoom="zoom-in"
-												style=" background-position: 50% 50%;"><a
-													class="background-image-placeholder-link" data-image-height="3264"
-													data-image-width="5824"
-													href="/webpage/x8H9rc0S53XQg/resources/10e91184-8099-4715-944f-c6e60dd294f9?asset_id=10e91184-8099-4715-944f-c6e60dd294f9&amp;image_assets=false&amp;size=1024"></a>
-											</div>
-										</div>
-										<div class="section-content">
-											<div class="section-content-view card-center">
-												<div class="content-container">
-													<p class="text-center">それは、コロナショックを筆頭に徐々に重なった負債である。</p>
-													<p class="text-center">
-														とは言っても金銭的な負債ではなく仕事や連携等、最低限に押し込んだせいで欠如した業務は多く、今このウェブサイトを作成しているパソコンですらファイル管理がされず、ファイル名が「あああああ」「aaaa」と小学生のポケモンと同じ程度に汚い。
-													</p>
-													<p class="text-center">
-														その上でコロナショックは発生した。コロナショックと宣伝の停滞、そして部活動参加のハードルが上がった影響で人数が大きく減り、一人宗教にハマったり他にセクハラで消えたり…まぁ色々あった。…そこで、機械の使い方や理念や目標が次々と変わってしまった。また、現時点では沈静化しているが以後起きないとは限らない。
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="section spacer-section content-spacer top-shadow bottom-shadow"
-									data-layer="1" data-layer-name="over" data-section-behavior="nightcap-spacer">
-								</div>
-								<div class="section card-flipbook-section" data-layer="-1" data-layer-name="under"
-									data-section-behavior="nightcap-column-overlay" data-spacing=".75">
-									<div class="section-view">
-										<div class="section-background">
-											<div class="section-background-image" data-pan-and-zoom="zoom-in"
-												style=" background-position: 50% 50%;"><a
-													class="background-image-placeholder-link" data-image-height="720"
-													data-image-width="1280"
-													href="/webpage/x8H9rc0S53XQg/resources/9679beb7-51d0-48a8-8a48-1a6006779089-tmp___html_3?asset_id=ee5ff26a-fcdb-43c7-afe0-3c6f4bd132c9&amp;img_etag=%22853708e839d046f0ba46e49db022a81a%22&amp;image_assets=false&amp;size=1024"></a>
-											</div>
-										</div>
-										<div class="section-content">
-											<div class="section-content-view card-center">
-												<div class="content-container">
-													<p class="">私、伊阪証はこれらの状況を「由々しき事態」であると考えた。特に以下の点は問題視されている。</p>
-													<p class="">
-														一つ目は機械の操作マニュアルが断絶した事だ。コロナの影響も大きいが、先代の部長交代時に正しく受け継がなかった事も、かまってもらう為に技術を独占した某自称技術担当も、これらも解決出来る範囲としなければ今後も同じ様になってしまう可能性が高い。
-													</p>
-													<p class="">
-														二つ目は中京大学のカリキュラムだ。何故かゼミが一年(表向きは半年)早く始まる影響で大きく部活に削ぐ時間が奪われ、部活が週二時間程度しか開催出来ず時間外作業が大きく増える。その為Nコンも期限オーバーとなった。しかも留学を推奨する癖に学生支援課ですら「そりゃ留学する事想定してませんからね」と言う程度に詰まっている。
-													</p>
-													<p class="">
-														三つ目はメンタルケアである、先の事件を踏まえつつ、他にも現時点で半脱退状態者がいる。その原因は大学への抵抗、単位がギリギリだったり兼業が忙しいならまだしも不登校や引きこもり等、大学で見かけない・周囲の人間ですら把握していない状態になった場合、いつの間にかハラスメント等の責任を問われる可能性がある。その為、中京大学のガイドラインを遵守しつつ独自のメンタルケア方法を熟し、連携している企業に迷惑がかからない様に、「あの女優よりも面倒」と言われない様に最善を尽くしたい。
-													</p>
-													<p class="">
-														最後に組織的統率力が現時点でほぼ機能していない事だ。参加意欲の喪失、特に既に技術がある人間にとっては、積極性の欠如により精神性の違いから離れる事を希望する人物もいた。現段階でもこの計画には脱退者・転校者からも協力して貰っている人物はいる。脱退しない事が何よりだが、脱退しても活動出来る様にする事も大事だ。
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="section spacer-section content-spacer top-shadow" data-layer="1"
-									data-layer-name="over" data-section-behavior="nightcap-spacer">
-								</div>
-								<div class="section full-width-section" data-layer="0" data-layer-name="over"
-									data-section-behavior="nightcap-full-width-photo">
-									<div class="section-view">
-										<div class="section-content">
-											<div class="section-content-view">
-												<div class="content-container">
-													<div class="image">
-														<div class="image-wrapper">
-															<a aria-label="Large preview" class="image-viewer-link"
-																href="/webpage/x8H9rc0S53XQg/resources/4d95b14f-c3ef-4e92-804d-6de712d82e76?asset_id=8fd62ee7-afd1-4050-88fc-692b26c29f6f&amp;img_etag=%22b1eb2f53c2f14833b8317f89404f959f%22&amp;image_assets=false&amp;size=1024"
-																rel="nofollow noreferrer" target="_blank">
-																<span class="image-placeholder-link" data-href="/webpage/x8H9rc0S53XQg/resources/4d95b14f-c3ef-4e92-804d-6de712d82e76?asset_id=8fd62ee7-afd1-4050-88fc-692b26c29f6f&amp;img_etag=%22b1eb2f53c2f14833b8317f89404f959f%22&amp;image_assets=false&amp;size=1024" data-id="4d95b14f-c3ef-4e92-804d-6de712d82e76" data-image-height="720" data-image-width="1280" style="width: 1280px; padding-top: 56.25%"></span>
-															</a>
 														</div>
+														<p class="text-center">
+															それ以外の記録自体もあるが、しかし計画段階で止まったものも多かった。それは何故か、Nコン…即ちNHKの主催するコンテストへの応募であった。長らく動画の中でも人気を誇り、映画を個人撮影する事も目標としていたが、事件は起きた。
+														</p>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="section spacer-section content-spacer bottom-shadow" data-layer-name="over"
-									data-section-behavior="nightcap-spacer">
-								</div>
-								<div class="section card-flipbook-section" data-layer="-1" data-layer-name="under"
-									data-section-behavior="nightcap-column-overlay" data-spacing=".75">
-									<div class="section-view">
-										<div class="section-background">
-											<div class="section-background-image" data-pan-and-zoom="zoom-in"
-												style=" background-position: 50% 50%;"><a
-													class="background-image-placeholder-link" data-image-height="3333"
-													data-image-width="5000"
-													href="/webpage/x8H9rc0S53XQg/resources/433229b2-e9e4-440d-a30e-7f25d6174f2c?asset_id=433229b2-e9e4-440d-a30e-7f25d6174f2c&amp;image_assets=false&amp;size=1024"></a>
-												<img alt="Rockpage-3" src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage-3.png" class="fullscreen-image"/>
+									<div class="section spacer-section content-spacer top-shadow bottom-shadow"
+										data-layer="1" data-layer-name="over" data-section-behavior="nightcap-spacer">
+									</div>
+									<div class="section card-flipbook-section" data-layer="-1" data-layer-name="under"
+										data-section-behavior="nightcap-column-overlay" data-spacing=".75">
+										<div class="section-view">
+											<div class="section-background">
+												<div class="section-background-image" data-pan-and-zoom="zoom-in"
+													style=" background-position: 50% 50%;"><a
+														class="background-image-placeholder-link"
+														data-image-height="3264" data-image-width="5824"
+														href="/webpage/x8H9rc0S53XQg/resources/10e91184-8099-4715-944f-c6e60dd294f9?asset_id=10e91184-8099-4715-944f-c6e60dd294f9&amp;image_assets=false&amp;size=1024"></a>
+												</div>
 											</div>
+											<div class="section-content">
+												<div class="section-content-view card-center">
+													<div class="content-container">
+														<p class="text-center">それは、コロナショックを筆頭に徐々に重なった負債である。</p>
+														<p class="text-center">
+															とは言っても金銭的な負債ではなく仕事や連携等、最低限に押し込んだせいで欠如した業務は多く、今このウェブサイトを作成しているパソコンですらファイル管理がされず、ファイル名が「あああああ」「aaaa」と小学生のポケモンと同じ程度に汚い。
+														</p>
+														<p class="text-center">
+															その上でコロナショックは発生した。コロナショックと宣伝の停滞、そして部活動参加のハードルが上がった影響で人数が大きく減り、一人宗教にハマったり他にセクハラで消えたり…まぁ色々あった。…そこで、機械の使い方や理念や目標が次々と変わってしまった。また、現時点では沈静化しているが以後起きないとは限らない。
+														</p>
+													</div>
+												</div>
 											</div>
-											<div class="section-bg"
-												style="background-image:https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage-2.png;">
-												<div class="section-content">
-													<div class="section-content">
-														<div class="section-content-view card-center">
-															<div class="content-container">
-																<p class="text-center">創作と信念プロジェクト (Creation &amp;
-																	Believer project) について。</p>
-																<p>
-																	機材を使いつつと共同制作や関与によって世代の壁を壊し世代間ギャップを無くす、地道な機材使用法の継承、そして創作と共感による解決とまではいかないが不満の解消をメンバー間に齎し、心的負担によるトラブル抑制・察知を行う。
-																</p>
-																<p>
-																	また、これにおいて傑作を作り上げる事で目標を打ち立て、それを超えるという分かり易く、同時に広告となる看板作品が出来上がる。この作品を完成させる事で嘗ての創作に対しての姿勢を蘇らせ、更には部全体の安定にもなるのではないかという計画である。
-																</p>
-																<p>
-																	色々試したが、自分の作品は基本的に毛色が合わない為、部外の協力者数人と協力、そしてTRPG形式で進める事で傑作の為に統率を取りつつ進める事となった。
-																</p>
-																<p class="text-center">以下より、その傑作の詳細と現時点での報告である。</p>
+										</div>
+									</div>
+									<div class="section spacer-section content-spacer top-shadow bottom-shadow"
+										data-layer="1" data-layer-name="over" data-section-behavior="nightcap-spacer">
+									</div>
+									<div class="section card-flipbook-section" data-layer="-1" data-layer-name="under"
+										data-section-behavior="nightcap-column-overlay" data-spacing=".75">
+										<div class="section-view">
+											<div class="section-background">
+												<div class="section-background-image" data-pan-and-zoom="zoom-in"
+													style=" background-position: 50% 50%;"><a
+														class="background-image-placeholder-link"
+														data-image-height="720" data-image-width="1280"
+														href="/webpage/x8H9rc0S53XQg/resources/9679beb7-51d0-48a8-8a48-1a6006779089-tmp___html_3?asset_id=ee5ff26a-fcdb-43c7-afe0-3c6f4bd132c9&amp;img_etag=%22853708e839d046f0ba46e49db022a81a%22&amp;image_assets=false&amp;size=1024"></a>
+												</div>
+											</div>
+											<div class="section-content">
+												<div class="section-content-view card-center">
+													<div class="content-container">
+														<p class="">私、伊阪証はこれらの状況を「由々しき事態」であると考えた。特に以下の点は問題視されている。</p>
+														<p class="">
+															一つ目は機械の操作マニュアルが断絶した事だ。コロナの影響も大きいが、先代の部長交代時に正しく受け継がなかった事も、かまってもらう為に技術を独占した某自称技術担当も、これらも解決出来る範囲としなければ今後も同じ様になってしまう可能性が高い。
+														</p>
+														<p class="">
+															二つ目は中京大学のカリキュラムだ。何故かゼミが一年(表向きは半年)早く始まる影響で大きく部活に削ぐ時間が奪われ、部活が週二時間程度しか開催出来ず時間外作業が大きく増える。その為Nコンも期限オーバーとなった。しかも留学を推奨する癖に学生支援課ですら「そりゃ留学する事想定してませんからね」と言う程度に詰まっている。
+														</p>
+														<p class="">
+															三つ目はメンタルケアである、先の事件を踏まえつつ、他にも現時点で半脱退状態者がいる。その原因は大学への抵抗、単位がギリギリだったり兼業が忙しいならまだしも不登校や引きこもり等、大学で見かけない・周囲の人間ですら把握していない状態になった場合、いつの間にかハラスメント等の責任を問われる可能性がある。その為、中京大学のガイドラインを遵守しつつ独自のメンタルケア方法を熟し、連携している企業に迷惑がかからない様に、「あの女優よりも面倒」と言われない様に最善を尽くしたい。
+														</p>
+														<p class="">
+															最後に組織的統率力が現時点でほぼ機能していない事だ。参加意欲の喪失、特に既に技術がある人間にとっては、積極性の欠如により精神性の違いから離れる事を希望する人物もいた。現段階でもこの計画には脱退者・転校者からも協力して貰っている人物はいる。脱退しない事が何よりだが、脱退しても活動出来る様にする事も大事だ。
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="section spacer-section content-spacer top-shadow" data-layer="1"
+										data-layer-name="over" data-section-behavior="nightcap-spacer">
+									</div>
+									<div class="section full-width-section" data-layer="0" data-layer-name="over"
+										data-section-behavior="nightcap-full-width-photo">
+													<div class="content-container">
+														<div class="image">
+															<div class="image-wrapper">
+																<a aria-label="Large preview" class="image-viewer-link"
+																	href="/webpage/x8H9rc0S53XQg/resources/4d95b14f-c3ef-4e92-804d-6de712d82e76?asset_id=8fd62ee7-afd1-4050-88fc-692b26c29f6f&amp;img_etag=%22b1eb2f53c2f14833b8317f89404f959f%22&amp;image_assets=false&amp;size=1024"
+																	rel="nofollow noreferrer" target="_blank">
+																	<span class="image-placeholder-link" data-href="/webpage/x8H9rc0S53XQg/resources/4d95b14f-c3ef-4e92-804d-6de712d82e76?asset_id=8fd62ee7-afd1-4050-88fc-692b26c29f6f&amp;img_etag=%22b1eb2f53c2f14833b8317f89404f959f%22&amp;image_assets=false&amp;size=1024" data-id="4d95b14f-c3ef-4e92-804d-6de712d82e76" data-image-height="720" data-image-width="1280" style="width: 1280px; padding-top: 56.25%"></span>
+																</a>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="section spacer-section content-spacer top-shadow" data-layer="1"
-												data-layer-name="over" data-section-behavior="nightcap-spacer">
-											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section spacer-section content-spacer" data-layer-name="over"
-					data-section-behavior="nightcap-spacer">
-				</div>
-				<div class="section single-column-section split-layout image-on-left" data-layer="0"
-					data-layer-name="over" data-section-behavior="nightcap-split-layout">
-					<div class="section-view">
-						<div class="section-background">
-							<div class="section-background-image" style="background-position: 50% 50%;">
-								<a class="background-image-placeholder-link" data-image-height="720"
-									data-image-width="1280"
-									href="/webpage/x8H9rc0S53XQg/resources/63bb3143-7c25-4ac0-9af6-65369933a25f-_____20_png?asset_id=542c01e3-6db5-484e-ac10-2ec4e45bbe45&amp;img_etag=%22107ce6f5139c4ef7b7bb47b3da4d20ae%22&amp;image_assets=false&amp;size=1024"></a>
-								<img alt="Rockpage-4" src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/spellmissdeleted.png" class="fullscreen-image"/>
+									<div class="section spacer-section content-spacer bottom-shadow"
+										data-layer-name="over" data-section-behavior="nightcap-spacer">
+									</div>
+									<div class="section card-flipbook-section" data-layer="-1" data-layer-name="under"
+										data-section-behavior="nightcap-column-overlay" data-spacing=".75">
+										<div class="section-view">
+											<div class="section-background">
+												<div class="section-background-image" data-pan-and-zoom="zoom-in"
+													style=" background-position: 50% 50%;"><a
+														class="background-image-placeholder-link"
+														data-image-height="3333" data-image-width="5000"
+														href="/webpage/x8H9rc0S53XQg/resources/433229b2-e9e4-440d-a30e-7f25d6174f2c?asset_id=433229b2-e9e4-440d-a30e-7f25d6174f2c&amp;image_assets=false&amp;size=1024"></a>
+													<img alt="Rockpage-3" src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage-3.png" class="fullscreen-image"/>
 											</div>
-								<div class="section-content">
-									<div class="section-content-view card-center">
-										<div class="content-container">
-											<p class="text-center">
-												<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage-4.png" alt="背景画像">
-												<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage-5.jpg" alt="背景画像">
-    </div>
-												<div class="section-content">
-													<h2>第一弾: 悪の零落</h2>
-													<p>隣の高校は奇妙な噂に包まれた場所であった。失踪、爆発音、銃声、絶叫…</p>
-													<p>行くなとは言われたが我慢も出来ず、不満をぶつけに行こうとした貴方は…</p>
-
-													<div class="video-container">
-														<iframe src="https://www.youtube.com/embed/UNJTCk8_5g4"
-															frameborder="0" allowfullscreen></iframe>
+												</div>
+												<div class="section-bg"
+													style="background-image:https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage-2.png;">
+													<div class="section-content">
+														<div class="section-content">
+															<div class="section-content-view card-center">
+																<div class="content-container">
+																	<p class="text-center">創作と信念プロジェクト (Creation &amp;
+																		Believer project) について。</p>
+																	<p>
+																		機材を使いつつと共同制作や関与によって世代の壁を壊し世代間ギャップを無くす、地道な機材使用法の継承、そして創作と共感による解決とまではいかないが不満の解消をメンバー間に齎し、心的負担によるトラブル抑制・察知を行う。
+																	</p>
+																	<p>
+																		また、これにおいて傑作を作り上げる事で目標を打ち立て、それを超えるという分かり易く、同時に広告となる看板作品が出来上がる。この作品を完成させる事で嘗ての創作に対しての姿勢を蘇らせ、更には部全体の安定にもなるのではないかという計画である。
+																	</p>
+																	<p>
+																		色々試したが、自分の作品は基本的に毛色が合わない為、部外の協力者数人と協力、そしてTRPG形式で進める事で傑作の為に統率を取りつつ進める事となった。
+																	</p>
+																	<p class="text-center">以下より、その傑作の詳細と現時点での報告である。</p>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
+												<div class="section spacer-section content-spacer top-shadow"
+													data-layer="1" data-layer-name="over"
+													data-section-behavior="nightcap-spacer">
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -2030,226 +1994,262 @@
 					<div class="section spacer-section content-spacer" data-layer-name="over"
 						data-section-behavior="nightcap-spacer">
 					</div>
-					<div class="section single-column-section split-layout image-on-right" data-layer="0"
-						data-layer-name="over" data-section-behavior="nightcap-split-layout">
-						<div class="section-view">
-							<div class="section-background">
-								<div class="section-background-image"
-									style="background-position: 97.39583333333334% 56.000001695421005%;">
-									<a class="background-image-placeholder-link" data-image-height="3888"
-										data-image-width="5184"
-										href="/webpage/x8H9rc0S53XQg/resources/0805ad41-df56-43a5-b675-d0ecdbfb394c?asset_id=0805ad41-df56-43a5-b675-d0ecdbfb394c&amp;image_assets=false&amp;size=1024"></a>
-								</div>
-							</div>
-							<div class="section single-column-section image-on-left">
-								<div class="section-background">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-8.png" alt="背景画像">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-1.png" alt="背景画像">
-    </div>
-									<div class="section-content">
-										<h2>第二弾: 狂気の機関車ショー</h2>
-										<p class="">
-											最近、観光地としての活動を始めた島は知名度こそ高いが、それは曰くつきの話ばかりだ。そこで、島の所有者は莫大な金銭を提供し様々な事件の解決を依頼する。その中で目を引く機関車同士で衝突させるショーに赴いた。
-										</p>
-										<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/2"
-												rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section spacer-section content-spacer" data-layer-name="over"
-						data-section-behavior="nightcap-spacer">
-					</div>
 					<div class="section single-column-section split-layout image-on-left" data-layer="0"
-						data-layer-name="over" data-section-behavior="nightcap-split-layout">
-						<div class="section-view">
-							<div class="section-background">
-								<div class="section-background-image"
-									style="background-position: 47.96874920527141% 29.22222349378798%;">
-									<a class="background-image-placeholder-link" data-image-height="1920"
-										data-image-width="1500"
-										href="/webpage/x8H9rc0S53XQg/resources/a71e58f5-b880-4554-a11d-c7ef13b409b4-_________6__?asset_id=351b356a-ab4e-42b1-8f77-b632cfdbad67&amp;img_etag=%22b68dd8e29a7342688d7c735374853011%22&amp;image_assets=false&amp;size=1024"></a>
-								</div>
-							</div>
-							<div class="section single-column-section image-on-right">
-								<div class="section-background">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-2.png" alt="背景画像">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/newsupport-1.png" alt="背景画像">
-    </div>
-									<div class="section-content">
-										<h2>第三弾:全て、白日の元に。</h2>
-										<p class="">
-											島は嘗て凄惨な歴史より生まれ、その結果この世のものとはいえない存在が跋扈している事が判明し、野放しにすれば賞金よりも莫大な金が手に入ると察し、島と陰謀の中に飛び込んだ。
-										</p>
-										<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/3/"
-												rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section spacer-section content-spacer" data-layer-name="over"
-						data-section-behavior="nightcap-spacer">
-					</div>
-					<div class="section single-column-section split-layout image-on-right" data-layer="0"
-						data-layer-name="over" data-section-behavior="nightcap-split-layout">
-						<div class="section-view">
-							<div class="section-background">
-								<div class="section-background-image"
-									style="background-position: 6.666666766007741% 58.11111026340061%;">
-									<a class="background-image-placeholder-link" data-image-height="670"
-										data-image-width="1280"
-										href="/webpage/x8H9rc0S53XQg/resources/cbbb698d-3c08-4d3c-883e-7eb365994d0f-_______3__pn?asset_id=65ecec4b-669f-498c-8eee-05e67fc31fb4&amp;img_etag=%224163e7d1b4c043a4ba61f43aa492cb50%22&amp;image_assets=false&amp;size=1024"></a>
-								</div>
-							</div>
-							　　<div class="section single-column-section image-on-left">
-								<div class="section-background">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-3.png" alt="背景画像">
-    </div>
-									<div class="section-content">
-										　　<h2>第四弾:閉鎖海岸或いは平坂異岸</h2>
-										</p>
-										<p class="">
-											政府は妖怪や邪神を把握しており、その上でテロリストを利用して島ごと消そうと計画した。しかし、テロリストもテロリストで何か思惑があるようだ。生存第一、先ずは事件を解決し命を繋いで逃げ延びてみせろ。
-										</p>
-										<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/4/"
-												rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section spacer-section content-spacer" data-layer-name="over"
-						data-section-behavior="nightcap-spacer">
-					</div>
-					<div class="section single-column-section split-layout image-on-left" data-layer="0"
-						data-layer-name="over" data-section-behavior="nightcap-split-layout">
-						<div class="section-view">
-							<div class="section-background">
-								<div class="section-background-image" style="background-position: 50% 50%;">
-									<a class="background-image-placeholder-link" data-image-height="670"
-										data-image-width="1280"
-										href="/webpage/x8H9rc0S53XQg/resources/b6f66b2f-b802-4f85-a8a4-ef689dd00196-_______4__pn?asset_id=cd02fccf-c0d3-47a5-b525-72a170af400c&amp;img_etag=%22d31afa6bf7424a688c3b17115f33abfd%22&amp;image_assets=false&amp;size=1024"></a>
-								</div>
-							</div>
-							　　<div class="section single-column-section image-on-right">
-								<div class="section-background">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-4.png" alt="背景画像">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-5.png" alt="背景画像">
-    </div>
-									<div class="section-content">
-										　　<h2>第五弾:悪と夢の氾濫</h2>
-										</p>
-										<p class="">
-											テロリストの虐殺事件から暫く、高校は沈静化していた。しかし、高校内が尋常でない騒ぎになり、ある日それは変形した人体として露見、しかも死体ではなく生存している状態で発見した。この学校には多くの邪神が入り込み、勢力争いをしているらしく、それが最終的に世界を滅ぼす可能性を懸念した人類を抑えつつ、邪神の抱える難題を解決しなければ…人類は終止符を迎える事になる。
-										</p>
-										<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/5/"
-												rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section spacer-section content-spacer" data-layer-name="over"
-						data-section-behavior="nightcap-spacer">
-					</div>
-					<div class="section single-column-section split-layout image-on-right" data-layer="0"
 						data-layer-name="over" data-section-behavior="nightcap-split-layout">
 						<div class="section-view">
 							<div class="section-background">
 								<div class="section-background-image" style="background-position: 50% 50%;">
 									<a class="background-image-placeholder-link" data-image-height="720"
 										data-image-width="1280"
-										href="/webpage/x8H9rc0S53XQg/resources/1333df98-c893-4561-8a36-e8e732751ba9-_________2__?asset_id=000678e1-f1cc-4b76-ab5a-1aacee8d4c5b&amp;img_etag=%226b84daaaea42431c9e539b1ba55c9b7c%22&amp;image_assets=false&amp;size=1024"></a>
-								</div>
-							</div>
-							<div class="section single-column-section image-on-left">
-								<div class="section-background">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-6.png" alt="背景画像">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-7.png" alt="背景画像">
-    </div>
+										href="/webpage/x8H9rc0S53XQg/resources/63bb3143-7c25-4ac0-9af6-65369933a25f-_____20_png?asset_id=542c01e3-6db5-484e-ac10-2ec4e45bbe45&amp;img_etag=%22107ce6f5139c4ef7b7bb47b3da4d20ae%22&amp;image_assets=false&amp;size=1024"></a>
+									<img alt="Rockpage-4" src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/spellmissdeleted.png" class="fullscreen-image"/>
+											</div>
 									<div class="section-content">
-										　　<h2>第六弾:届かねばならぬ場所</h2>
-										</p>
-										<p class="">
-											ニャルラトホテプは、あの日から既に姿を見せておらず、その背後には歪んだ信仰、殺意や悪意が混ざっていたが為に起きた事だった。その中でニャルラトホテプから人類を助ける為に、核兵器を託された。…人類の答えを出し、そして全ての邪神の協力を得て、物語に終止符を。
-										</p>
-										<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/6/"
-												rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section spacer-section content-spacer" data-layer-name="over"
-						data-section-behavior="nightcap-spacer">
-					</div>
-					<div class="section single-column-section split-layout image-on-left" data-layer="0"
-						data-layer-name="over" data-section-behavior="nightcap-split-layout">
-						<div class="section-view">
-							<div class="section-background">
-								<div class="section-background-image" style="background-position: 50% 50%;">
-									<a class="background-image-placeholder-link" data-image-height="1056"
-										data-image-width="1055"
-										href="/webpage/x8H9rc0S53XQg/resources/b11b77d0-69b1-4a59-80c7-db60490277df-_________1__?asset_id=f016379f-7fee-47e9-966c-215764ff136d&amp;img_etag=%22a1ee412a2e5a40d281a71107f3092136%22&amp;image_assets=false&amp;size=1024"></a>
-								</div>
-							</div>
-							<div class="section single-column-section image-on-right">
-								<div class="section-background">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage-2.png" alt="背景画像">
+										<div class="section-content-view card-center">
+											<div class="content-container">
+												<p class="text-center">
+													<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage-4.png" alt="背景画像">
+													<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage-5.jpg" alt="背景画像">
     </div>
-									<div class="section-content">
-										　　<h2>第七弾:認知的不協和</h2>
-										</p>
-										<p class="">
-											この高校が大きく狂う前には、ある一人の少年がいた。その名は坂義一、彼は昔の事件の影響で、誰かに密着し心拍を借りなければ生きれない人間だった。しかし、その事件の詳細を調べる程、彼は予想だにしない事件の真相と自身の来歴を知る。そして、最後に彼はある選択をし、この場所の安寧は無くなった。
-										</p>
-										<p class="text-center">現在制作中(脚本制作中)</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section spacer-section content-spacer" data-layer-name="over"
-						data-section-behavior="nightcap-spacer">
-					</div>
-					<div class="section single-column-section split-layout image-on-right" data-layer="0"
-						data-layer-name="over" data-section-behavior="nightcap-split-layout">
-						<div class="section-view">
-							<div class="section-background">
-								<div class="section-background-image"
-									style="background-position: 93.85416905085245% 49.22222561306423%;">
-									<a class="background-image-placeholder-link" data-image-height="720"
-										data-image-width="1280"
-										href="/webpage/x8H9rc0S53XQg/resources/afcba030-8fa6-4926-8c68-e8d7946f17af-_______5__pn?asset_id=2522cc48-016b-4c22-a72a-d20e6059942d&amp;img_etag=%22a124547434934759a384ca946c7c6b6a%22&amp;image_assets=false&amp;size=1024"></a>
-								</div>
-							</div>
-							<div class="section single-column-section image-on-left">
-								<div class="section-background">
-									<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/newsupport-2.png" alt="背景画像">
-    </div>
-									<div class="section-content">
-										　　<h2>
-											第八弾:心不在</h2>
-										</p>
-										<p class="">
-											この捨てられた人々の為の病院は、部位欠損のある患者達の最後の希望であった。そして、邪神の信仰システムを利用し彼等は信じる事で体を治せる様になった…しかし、現実は厳しい。捨てられるまでは忌み物、人間として扱われなかったが為に希望も何も知らず、助けようにも救いも助けも分からなかった。ならば、それ以上の不幸をぶつけて解決してみせる、そう誓った看護師の話。
-										</p>
-										<p class="text-center">現在制作中(脚本制作中)</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+													<div class="section-content">
+														<h2>第一弾: 悪の零落</h2>
+														<p>隣の高校は奇妙な噂に包まれた場所であった。失踪、爆発音、銃声、絶叫…</p>
+														<p>行くなとは言われたが我慢も出来ず、不満をぶつけに行こうとした貴方は…</p>
 
-					<img alt="Rockpage-5" src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage-5.png" class="fullscreen-image"/>
+														<div class="video-container">
+															<iframe src="https://www.youtube.com/embed/UNJTCk8_5g4"
+																frameborder="0" allowfullscreen></iframe>
+														</div>
+													</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section spacer-section content-spacer" data-layer-name="over"
+							data-section-behavior="nightcap-spacer">
+						</div>
+						<div class="section single-column-section split-layout image-on-right" data-layer="0"
+							data-layer-name="over" data-section-behavior="nightcap-split-layout">
+							<div class="section-view">
+								<div class="section-background">
+									<div class="section-background-image"
+										style="background-position: 97.39583333333334% 56.000001695421005%;">
+										<a class="background-image-placeholder-link" data-image-height="3888"
+											data-image-width="5184"
+											href="/webpage/x8H9rc0S53XQg/resources/0805ad41-df56-43a5-b675-d0ecdbfb394c?asset_id=0805ad41-df56-43a5-b675-d0ecdbfb394c&amp;image_assets=false&amp;size=1024"></a>
+									</div>
+								</div>
+								<div class="section single-column-section image-on-left">
+									<div class="section-background">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-8.png" alt="背景画像">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-1.png" alt="背景画像">
+    </div>
+										<div class="section-content">
+											<h2>第二弾: 狂気の機関車ショー</h2>
+											<p class="">
+												最近、観光地としての活動を始めた島は知名度こそ高いが、それは曰くつきの話ばかりだ。そこで、島の所有者は莫大な金銭を提供し様々な事件の解決を依頼する。その中で目を引く機関車同士で衝突させるショーに赴いた。
+											</p>
+											<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/2"
+													rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section spacer-section content-spacer" data-layer-name="over"
+							data-section-behavior="nightcap-spacer">
+						</div>
+						<div class="section single-column-section split-layout image-on-left" data-layer="0"
+							data-layer-name="over" data-section-behavior="nightcap-split-layout">
+							<div class="section-view">
+								<div class="section-background">
+									<div class="section-background-image"
+										style="background-position: 47.96874920527141% 29.22222349378798%;">
+										<a class="background-image-placeholder-link" data-image-height="1920"
+											data-image-width="1500"
+											href="/webpage/x8H9rc0S53XQg/resources/a71e58f5-b880-4554-a11d-c7ef13b409b4-_________6__?asset_id=351b356a-ab4e-42b1-8f77-b632cfdbad67&amp;img_etag=%22b68dd8e29a7342688d7c735374853011%22&amp;image_assets=false&amp;size=1024"></a>
+									</div>
+								</div>
+								<div class="section single-column-section image-on-right">
+									<div class="section-background">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-2.png" alt="背景画像">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/newsupport-1.png" alt="背景画像">
+    </div>
+										<div class="section-content">
+											<h2>第三弾:全て、白日の元に。</h2>
+											<p class="">
+												島は嘗て凄惨な歴史より生まれ、その結果この世のものとはいえない存在が跋扈している事が判明し、野放しにすれば賞金よりも莫大な金が手に入ると察し、島と陰謀の中に飛び込んだ。
+											</p>
+											<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/3/"
+													rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section spacer-section content-spacer" data-layer-name="over"
+							data-section-behavior="nightcap-spacer">
+						</div>
+						<div class="section single-column-section split-layout image-on-right" data-layer="0"
+							data-layer-name="over" data-section-behavior="nightcap-split-layout">
+							<div class="section-view">
+								<div class="section-background">
+									<div class="section-background-image"
+										style="background-position: 6.666666766007741% 58.11111026340061%;">
+										<a class="background-image-placeholder-link" data-image-height="670"
+											data-image-width="1280"
+											href="/webpage/x8H9rc0S53XQg/resources/cbbb698d-3c08-4d3c-883e-7eb365994d0f-_______3__pn?asset_id=65ecec4b-669f-498c-8eee-05e67fc31fb4&amp;img_etag=%224163e7d1b4c043a4ba61f43aa492cb50%22&amp;image_assets=false&amp;size=1024"></a>
+									</div>
+								</div>
+								　　<div class="section single-column-section image-on-left">
+									<div class="section-background">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-3.png" alt="背景画像">
+    </div>
+										<div class="section-content">
+											　　<h2>第四弾:閉鎖海岸或いは平坂異岸</h2>
+											</p>
+											<p class="">
+												政府は妖怪や邪神を把握しており、その上でテロリストを利用して島ごと消そうと計画した。しかし、テロリストもテロリストで何か思惑があるようだ。生存第一、先ずは事件を解決し命を繋いで逃げ延びてみせろ。
+											</p>
+											<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/4/"
+													rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section spacer-section content-spacer" data-layer-name="over"
+							data-section-behavior="nightcap-spacer">
+						</div>
+						<div class="section single-column-section split-layout image-on-left" data-layer="0"
+							data-layer-name="over" data-section-behavior="nightcap-split-layout">
+							<div class="section-view">
+								<div class="section-background">
+									<div class="section-background-image" style="background-position: 50% 50%;">
+										<a class="background-image-placeholder-link" data-image-height="670"
+											data-image-width="1280"
+											href="/webpage/x8H9rc0S53XQg/resources/b6f66b2f-b802-4f85-a8a4-ef689dd00196-_______4__pn?asset_id=cd02fccf-c0d3-47a5-b525-72a170af400c&amp;img_etag=%22d31afa6bf7424a688c3b17115f33abfd%22&amp;image_assets=false&amp;size=1024"></a>
+									</div>
+								</div>
+								　　<div class="section single-column-section image-on-right">
+									<div class="section-background">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-4.png" alt="背景画像">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-5.png" alt="背景画像">
+    </div>
+										<div class="section-content">
+											　　<h2>第五弾:悪と夢の氾濫</h2>
+											</p>
+											<p class="">
+												テロリストの虐殺事件から暫く、高校は沈静化していた。しかし、高校内が尋常でない騒ぎになり、ある日それは変形した人体として露見、しかも死体ではなく生存している状態で発見した。この学校には多くの邪神が入り込み、勢力争いをしているらしく、それが最終的に世界を滅ぼす可能性を懸念した人類を抑えつつ、邪神の抱える難題を解決しなければ…人類は終止符を迎える事になる。
+											</p>
+											<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/5/"
+													rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section spacer-section content-spacer" data-layer-name="over"
+							data-section-behavior="nightcap-spacer">
+						</div>
+						<div class="section single-column-section split-layout image-on-right" data-layer="0"
+							data-layer-name="over" data-section-behavior="nightcap-split-layout">
+							<div class="section-view">
+								<div class="section-background">
+									<div class="section-background-image" style="background-position: 50% 50%;">
+										<a class="background-image-placeholder-link" data-image-height="720"
+											data-image-width="1280"
+											href="/webpage/x8H9rc0S53XQg/resources/1333df98-c893-4561-8a36-e8e732751ba9-_________2__?asset_id=000678e1-f1cc-4b76-ab5a-1aacee8d4c5b&amp;img_etag=%226b84daaaea42431c9e539b1ba55c9b7c%22&amp;image_assets=false&amp;size=1024"></a>
+									</div>
+								</div>
+								<div class="section single-column-section image-on-left">
+									<div class="section-background">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-6.png" alt="背景画像">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweensupports-7.png" alt="背景画像">
+    </div>
+										<div class="section-content">
+											　　<h2>第六弾:届かねばならぬ場所</h2>
+											</p>
+											<p class="">
+												ニャルラトホテプは、あの日から既に姿を見せておらず、その背後には歪んだ信仰、殺意や悪意が混ざっていたが為に起きた事だった。その中でニャルラトホテプから人類を助ける為に、核兵器を託された。…人類の答えを出し、そして全ての邪神の協力を得て、物語に終止符を。
+											</p>
+											<p class="text-center">現在制作中<a href="https://ncode.syosetu.com/n7782jx/6/"
+													rel="nofollow noreferrer" target="_blank">(脚本公開済)</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section spacer-section content-spacer" data-layer-name="over"
+							data-section-behavior="nightcap-spacer">
+						</div>
+						<div class="section single-column-section split-layout image-on-left" data-layer="0"
+							data-layer-name="over" data-section-behavior="nightcap-split-layout">
+							<div class="section-view">
+								<div class="section-background">
+									<div class="section-background-image" style="background-position: 50% 50%;">
+										<a class="background-image-placeholder-link" data-image-height="1056"
+											data-image-width="1055"
+											href="/webpage/x8H9rc0S53XQg/resources/b11b77d0-69b1-4a59-80c7-db60490277df-_________1__?asset_id=f016379f-7fee-47e9-966c-215764ff136d&amp;img_etag=%22a1ee412a2e5a40d281a71107f3092136%22&amp;image_assets=false&amp;size=1024"></a>
+									</div>
+								</div>
+								<div class="section single-column-section image-on-right">
+									<div class="section-background">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/betweenimage-2.png" alt="背景画像">
+    </div>
+										<div class="section-content">
+											　　<h2>第七弾:認知的不協和</h2>
+											</p>
+											<p class="">
+												この高校が大きく狂う前には、ある一人の少年がいた。その名は坂義一、彼は昔の事件の影響で、誰かに密着し心拍を借りなければ生きれない人間だった。しかし、その事件の詳細を調べる程、彼は予想だにしない事件の真相と自身の来歴を知る。そして、最後に彼はある選択をし、この場所の安寧は無くなった。
+											</p>
+											<p class="text-center">現在制作中(脚本制作中)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section spacer-section content-spacer" data-layer-name="over"
+							data-section-behavior="nightcap-spacer">
+						</div>
+						<div class="section single-column-section split-layout image-on-right" data-layer="0"
+							data-layer-name="over" data-section-behavior="nightcap-split-layout">
+							<div class="section-view">
+								<div class="section-background">
+									<div class="section-background-image"
+										style="background-position: 93.85416905085245% 49.22222561306423%;">
+										<a class="background-image-placeholder-link" data-image-height="720"
+											data-image-width="1280"
+											href="/webpage/x8H9rc0S53XQg/resources/afcba030-8fa6-4926-8c68-e8d7946f17af-_______5__pn?asset_id=2522cc48-016b-4c22-a72a-d20e6059942d&amp;img_etag=%22a124547434934759a384ca946c7c6b6a%22&amp;image_assets=false&amp;size=1024"></a>
+									</div>
+								</div>
+								<div class="section single-column-section image-on-left">
+									<div class="section-background">
+										<img src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/newsupport-2.png" alt="背景画像">
+    </div>
+										<div class="section-content">
+											　　<h2>
+												第八弾:心不在</h2>
+											</p>
+											<p class="">
+												この捨てられた人々の為の病院は、部位欠損のある患者達の最後の希望であった。そして、邪神の信仰システムを利用し彼等は信じる事で体を治せる様になった…しかし、現実は厳しい。捨てられるまでは忌み物、人間として扱われなかったが為に希望も何も知らず、助けようにも救いも助けも分からなかった。ならば、それ以上の不幸をぶつけて解決してみせる、そう誓った看護師の話。
+											</p>
+											<p class="text-center">現在制作中(脚本制作中)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<img alt="Rockpage-5" src="https://raw.githubusercontent.com/isakamk12/CAB-ver.2/main/image/rockpage-5.png" class="fullscreen-image"/>
 
 			</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	</div>
 </body>
